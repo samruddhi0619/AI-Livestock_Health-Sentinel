@@ -1,0 +1,24 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+
+# Environment files
+.env
+
+# Node dependencies and builds
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Visual Studio Code
+.vscode/
+
+# Local databases and uploads
+backend/data/db.json
+uploads/*
+!uploads/demo_lumpy.png
