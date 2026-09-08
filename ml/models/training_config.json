@@ -1,0 +1,14 @@
+{
+  "num_classes": 2,
+  "class_names": [
+    "Healthy",
+    "Possible Lumpy Skin Disease"
+  ],
+  "batch_size": 16,
+  "epochs": 6,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "img_size": 224,
+  "device": "cpu",
+  "seed": 42
+}

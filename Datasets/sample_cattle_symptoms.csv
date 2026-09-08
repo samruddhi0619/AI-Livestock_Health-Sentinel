@@ -1,0 +1,101 @@
+age,breed,gender,history,vaccination,fever,cough,loss_of_appetite,reduced_milk_production,nasal_discharge,diarrhea,breathing_difficulty,skin_abnormalities,swelling,reduced_activity,disease
+7,jersey,Female,0,1,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+8,holstein_friesian,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+12,gir,Female,0,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+12,jersey,Male,0,1,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+10,indigenous,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+8,jersey,Male,0,0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Mastitis
+14,jersey,Male,1,0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+2,indigenous,Male,0,0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+9,gir,Male,0,0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+9,jersey,Female,1,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+10,other,Female,0,1,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+4,other,Female,0,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+10,indigenous,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+7,jersey,Female,0,0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+11,other,Male,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+7,indigenous,Male,2,0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+8,holstein_friesian,Female,1,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+9,jersey,Female,0,0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+4,jersey,Female,0,0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+10,holstein_friesian,Female,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+4,other,Male,1,1,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,Healthy
+13,gir,Male,1,0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+12,holstein_friesian,Female,0,0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+2,indigenous,Male,0,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+9,indigenous,Male,0,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,Foot-and-Mouth Disease
+3,sahiwal,Female,0,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,Foot-and-Mouth Disease
+11,sahiwal,Male,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+1,other,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+10,other,Female,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+4,other,Female,0,0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+10,sahiwal,Female,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+5,other,Female,0,0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+14,other,Male,0,0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+10,other,Female,1,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+8,sahiwal,Female,1,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+3,holstein_friesian,Female,0,1,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+2,holstein_friesian,Female,0,0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+2,indigenous,Female,1,1,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+3,jersey,Male,0,1,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+14,gir,Female,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+9,jersey,Male,0,1,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+4,indigenous,Female,1,0,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+11,holstein_friesian,Male,2,1,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+2,holstein_friesian,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+9,indigenous,Male,0,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,Foot-and-Mouth Disease
+3,indigenous,Female,0,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+13,jersey,Male,0,1,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,Healthy
+3,holstein_friesian,Male,0,0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,Healthy
+12,indigenous,Male,0,1,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+1,gir,Female,0,1,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+9,sahiwal,Male,2,1,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+11,indigenous,Male,0,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+7,other,Male,1,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+5,other,Female,0,1,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,Bovine Respiratory Disease
+7,sahiwal,Male,0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+1,indigenous,Female,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+3,sahiwal,Male,0,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+10,gir,Male,1,0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+3,gir,Female,0,0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+3,holstein_friesian,Female,2,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+1,indigenous,Female,0,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+1,gir,Female,0,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+10,other,Female,0,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+9,indigenous,Male,0,0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+4,sahiwal,Female,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+3,sahiwal,Female,0,1,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+5,other,Male,0,0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,Foot-and-Mouth Disease
+8,indigenous,Male,2,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+8,other,Female,1,1,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+3,jersey,Female,1,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+12,sahiwal,Female,0,0,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+1,indigenous,Male,1,1,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,Bovine Respiratory Disease
+6,jersey,Male,1,1,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+10,other,Male,0,1,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+7,gir,Female,0,0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+7,holstein_friesian,Male,0,0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+13,indigenous,Female,1,0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+13,jersey,Female,0,0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+3,holstein_friesian,Male,0,0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,Bovine Respiratory Disease
+10,other,Female,0,1,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Brucellosis
+4,indigenous,Male,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+6,gir,Female,1,1,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+3,jersey,Female,1,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+6,gir,Female,0,0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+13,gir,Female,0,0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+14,holstein_friesian,Male,0,1,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+1,indigenous,Female,2,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,Lumpy Skin Disease
+7,indigenous,Male,0,0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+12,sahiwal,Female,0,1,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+2,sahiwal,Female,1,1,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,Bovine Respiratory Disease
+11,sahiwal,Female,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+5,jersey,Female,2,1,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,Healthy
+6,other,Female,0,0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,Bovine Respiratory Disease
+4,gir,Male,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Brucellosis
+6,holstein_friesian,Male,0,1,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,Bovine Respiratory Disease
+2,jersey,Male,1,0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,Mastitis
+4,gir,Female,0,1,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,Lumpy Skin Disease
+4,holstein_friesian,Female,1,1,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease
+1,gir,Female,1,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Healthy
+10,gir,Female,0,0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Foot-and-Mouth Disease

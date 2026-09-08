@@ -1,0 +1,152 @@
+{
+  "selected_model": "XGBoost",
+  "models": {
+    "RandomForest": {
+      "train_duration_sec": 1.08,
+      "inference_latency_ms": 0.028,
+      "validation": {
+        "roc_auc": 0.9924,
+        "pr_auc": 0.9556,
+        "f1_score": 0.8669
+      },
+      "test": {
+        "accuracy": 0.9675,
+        "roc_auc": 0.9913,
+        "pr_auc": 0.9596,
+        "precision": 0.8178,
+        "recall": 0.9452,
+        "f1_score": 0.8769,
+        "confusion_matrix": [
+          [
+            3169,
+            96
+          ],
+          [
+            25,
+            431
+          ]
+        ]
+      },
+      "top_features": [
+        {
+          "feature": "x",
+          "importance": 0.1595
+        },
+        {
+          "feature": "y",
+          "importance": 0.0945
+        },
+        {
+          "feature": "tmp",
+          "importance": 0.0916
+        },
+        {
+          "feature": "tmn",
+          "importance": 0.086
+        },
+        {
+          "feature": "pre",
+          "importance": 0.0759
+        }
+      ]
+    },
+    "XGBoost": {
+      "train_duration_sec": 1.35,
+      "inference_latency_ms": 0.004,
+      "validation": {
+        "roc_auc": 0.9928,
+        "pr_auc": 0.9637,
+        "f1_score": 0.8777
+      },
+      "test": {
+        "accuracy": 0.9718,
+        "roc_auc": 0.993,
+        "pr_auc": 0.9675,
+        "precision": 0.8369,
+        "recall": 0.9561,
+        "f1_score": 0.8925,
+        "confusion_matrix": [
+          [
+            3180,
+            85
+          ],
+          [
+            20,
+            436
+          ]
+        ]
+      },
+      "top_features": [
+        {
+          "feature": "frs",
+          "importance": 0.2718
+        },
+        {
+          "feature": "x",
+          "importance": 0.1745
+        },
+        {
+          "feature": "X5_Ct_2010_Da",
+          "importance": 0.0617
+        },
+        {
+          "feature": "land_cover_2",
+          "importance": 0.0591
+        },
+        {
+          "feature": "dtr",
+          "importance": 0.0535
+        }
+      ]
+    },
+    "GradientBoosting": {
+      "train_duration_sec": 30.35,
+      "inference_latency_ms": 0.008,
+      "validation": {
+        "roc_auc": 0.9938,
+        "pr_auc": 0.9651,
+        "f1_score": 0.9205
+      },
+      "test": {
+        "accuracy": 0.9815,
+        "roc_auc": 0.9933,
+        "pr_auc": 0.9661,
+        "precision": 0.9448,
+        "recall": 0.9013,
+        "f1_score": 0.9226,
+        "confusion_matrix": [
+          [
+            3241,
+            24
+          ],
+          [
+            45,
+            411
+          ]
+        ]
+      },
+      "top_features": [
+        {
+          "feature": "x",
+          "importance": 0.4743
+        },
+        {
+          "feature": "X5_Ct_2010_Da",
+          "importance": 0.1589
+        },
+        {
+          "feature": "y",
+          "importance": 0.1326
+        },
+        {
+          "feature": "dtr",
+          "importance": 0.0549
+        },
+        {
+          "feature": "wet",
+          "importance": 0.0504
+        }
+      ]
+    }
+  }
+}

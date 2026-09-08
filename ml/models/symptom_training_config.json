@@ -1,0 +1,47 @@
+{
+  "selected_model": "XGBoost",
+  "diseases": [
+    "Healthy",
+    "Lumpy Skin Disease",
+    "Foot-and-Mouth Disease",
+    "Mastitis",
+    "Bovine Respiratory Disease",
+    "Brucellosis"
+  ],
+  "symptoms": [
+    "fever",
+    "cough",
+    "loss_of_appetite",
+    "reduced_milk_production",
+    "nasal_discharge",
+    "diarrhea",
+    "breathing_difficulty",
+    "skin_abnormalities",
+    "swelling",
+    "reduced_activity"
+  ],
+  "features": [
+    "age",
+    "breed",
+    "gender",
+    "history",
+    "vaccination",
+    "fever",
+    "cough",
+    "loss_of_appetite",
+    "reduced_milk_production",
+    "nasal_discharge",
+    "diarrhea",
+    "breathing_difficulty",
+    "skin_abnormalities",
+    "swelling",
+    "reduced_activity"
+  ],
+  "total_samples": 9996,
+  "split_ratio": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "random_seed": 42
+}

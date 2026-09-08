@@ -1,0 +1,214 @@
+{
+  "selected_model": "XGBoost",
+  "classes": [
+    "Healthy",
+    "Lumpy Skin Disease",
+    "Foot-and-Mouth Disease",
+    "Mastitis",
+    "Bovine Respiratory Disease",
+    "Brucellosis"
+  ],
+  "models": {
+    "RandomForest": {
+      "train_time_sec": 0.92,
+      "inference_latency_ms": 0.089,
+      "validation": {
+        "accuracy": 0.7927,
+        "f1_score": 0.7864
+      },
+      "test": {
+        "accuracy": 0.8007,
+        "precision_weighted": 0.7986,
+        "recall_weighted": 0.8007,
+        "f1_weighted": 0.7948,
+        "precision_macro": 0.7986,
+        "recall_macro": 0.8007,
+        "f1_macro": 0.7948,
+        "confusion_matrix": [
+          [
+            238,
+            1,
+            0,
+            0,
+            0,
+            11
+          ],
+          [
+            0,
+            231,
+            6,
+            7,
+            3,
+            3
+          ],
+          [
+            0,
+            30,
+            168,
+            36,
+            5,
+            11
+          ],
+          [
+            2,
+            19,
+            10,
+            190,
+            2,
+            27
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            244,
+            4
+          ],
+          [
+            20,
+            8,
+            24,
+            58,
+            10,
+            130
+          ]
+        ]
+      }
+    },
+    "XGBoost": {
+      "train_time_sec": 2.19,
+      "inference_latency_ms": 0.013,
+      "validation": {
+        "accuracy": 0.7887,
+        "f1_score": 0.7851
+      },
+      "test": {
+        "accuracy": 0.8,
+        "precision_weighted": 0.7978,
+        "recall_weighted": 0.8,
+        "f1_weighted": 0.7965,
+        "precision_macro": 0.7978,
+        "recall_macro": 0.8,
+        "f1_macro": 0.7965,
+        "confusion_matrix": [
+          [
+            235,
+            1,
+            0,
+            1,
+            0,
+            13
+          ],
+          [
+            1,
+            225,
+            9,
+            9,
+            3,
+            3
+          ],
+          [
+            0,
+            25,
+            176,
+            35,
+            4,
+            10
+          ],
+          [
+            2,
+            16,
+            14,
+            184,
+            2,
+            32
+          ],
+          [
+            0,
+            2,
+            1,
+            0,
+            243,
+            4
+          ],
+          [
+            18,
+            7,
+            28,
+            55,
+            5,
+            137
+          ]
+        ]
+      }
+    },
+    "GradientBoosting": {
+      "train_time_sec": 13.23,
+      "inference_latency_ms": 0.06,
+      "validation": {
+        "accuracy": 0.788,
+        "f1_score": 0.7837
+      },
+      "test": {
+        "accuracy": 0.7993,
+        "precision_weighted": 0.7968,
+        "recall_weighted": 0.7993,
+        "f1_weighted": 0.7958,
+        "precision_macro": 0.7968,
+        "recall_macro": 0.7993,
+        "f1_macro": 0.7958,
+        "confusion_matrix": [
+          [
+            236,
+            1,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            222,
+            10,
+            11,
+            3,
+            4
+          ],
+          [
+            0,
+            23,
+            181,
+            32,
+            4,
+            10
+          ],
+          [
+            2,
+            16,
+            16,
+            183,
+            2,
+            31
+          ],
+          [
+            0,
+            2,
+            2,
+            0,
+            242,
+            4
+          ],
+          [
+            16,
+            7,
+            29,
+            55,
+            8,
+            135
+          ]
+        ]
+      }
+    }
+  }
+}

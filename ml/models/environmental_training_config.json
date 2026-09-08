@@ -1,0 +1,39 @@
+{
+  "selected_model": "XGBoost",
+  "features": [
+    "x",
+    "y",
+    "cld",
+    "dtr",
+    "frs",
+    "pet",
+    "pre",
+    "tmn",
+    "tmp",
+    "tmx",
+    "vap",
+    "wet",
+    "elevation",
+    "X5_Ct_2010_Da",
+    "X5_Bf_2010_Da",
+    "land_cover_1",
+    "land_cover_2",
+    "land_cover_3",
+    "land_cover_4",
+    "land_cover_5",
+    "land_cover_6",
+    "land_cover_7",
+    "land_cover_8",
+    "land_cover_9",
+    "land_cover_10",
+    "land_cover_11"
+  ],
+  "scale_pos_weight": 7.161566304705495,
+  "dataset": "03_LSD_Environmental_Geospatial_Data.zip",
+  "leakage_purged": [
+    "region",
+    "country",
+    "reportingDate"
+  ],
+  "random_seed": 42
+}

@@ -1,0 +1,32 @@
+{
+  "feature_names": [
+    "x",
+    "y",
+    "cld",
+    "dtr",
+    "frs",
+    "pet",
+    "pre",
+    "tmn",
+    "tmp",
+    "tmx",
+    "vap",
+    "wet",
+    "elevation",
+    "X5_Ct_2010_Da",
+    "X5_Bf_2010_Da",
+    "land_cover_1",
+    "land_cover_2",
+    "land_cover_3",
+    "land_cover_4",
+    "land_cover_5",
+    "land_cover_6",
+    "land_cover_7",
+    "land_cover_8",
+    "land_cover_9",
+    "land_cover_10",
+    "land_cover_11"
+  ],
+  "target": "lumpy",
+  "model_type": "XGBoost"
+}
