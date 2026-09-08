@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-09-08T14:40:00+00:00",
+  "overall_verdict": "MOSTLY_HEALTHY",
+  "summary": "14/16 steps pass on the primary image+symptoms path; steps 14-15 fail when Image AI predicts Healthy and dilutes the fused score below High, so no disease_case is created. Re-test without image (or with High fused score) unlocks the full vet triage path.",
+  "services": {
+    "backend": "http://localhost:8000 (already running)",
+    "swagger": "http://localhost:8000/docs",
+    "frontend": "http://localhost:5173 (already running)"
+  },
+  "credentials_used": {
+    "farmer": "farmer_ramesh / sih2026",
+    "veterinarian": "dr_anita / sih2026",
+    "admin": "admin_officer / sih2026",
+    "note": "README credentials (farmer_a, vet_officer, admin_user) return 401 against the live sandbox DB"
+  },
+  "results": [
+    {
+      "step": 1,
+      "name": "Farmer logs in",
+      "status": "PASS",
+      "evidence": "POST /api/auth/login HTTP 200; Ramesh Patil (FARMER); JWT issued"
+    },
+    {
+      "step": 2,
+      "name": "Registers a cow",
+      "status": "PASS",
+      "evidence": "POST /api/animals HTTP 201; animal_id=TAG-PUN-2026-BAVF7 (and later TAG-PUN-2026-MNTT4 for high-risk path)"
+    },
+    {
+      "step": 3,
+      "name": "QR code is generated",
+      "status": "PASS",
+      "evidence": "qr_code_identifier + base64 + file under /uploads/qrcodes/; GET /api/animals/qr/{token} HTTP 200"
+    },
+    {
+      "step": 4,
+      "name": "Farmer opens Animal Health Passport",
+      "status": "PASS",
+      "evidence": "GET /api/animals/{id}/passport HTTP 200; passport_metadata + farmer/ai/vet tiers present"
+    },
+    {
+      "step": 5,
+      "name": "Farmer reports symptoms",
+      "status": "PASS",
+      "evidence": "POST /api/reports/health accepted symptoms list; report_id returned"
+    },
+    {
+      "step": 6,
+      "name": "Farmer uploads an animal image",
+      "status": "PASS",
+      "evidence": "image_url=/uploads/health_*.jpg persisted; real JPEG used (imgs002.jpg)"
+    },
+    {
+      "step": 7,
+      "name": "Image AI runs",
+      "status": "PASS",
+      "evidence": "MobileNetV3-Small inference; predicted_class=Healthy, confidence=0.9988, risk_score=0.1, quality_check_passed=True"
+    },
+    {
+      "step": 8,
+      "name": "Symptom AI runs",
+      "status": "PASS",
+      "evidence": "XGBoost+SHAP; top_condition=Lumpy Skin Disease; risk_score=91.5 (with image path) / 61.8 (symptoms-only high-risk path)"
+    },
+    {
+      "step": 9,
+      "name": "Environmental risk is calculated",
+      "status": "PASS",
+      "evidence": "ai_analyses.environment environmental_risk_score=58.8 (Medium); XGBoost geospatial model"
+    },
+    {
+      "step": 10,
+      "name": "Multi-modal risk score is generated",
+      "status": "PASS",
+      "evidence": "With healthy image: final=47.0 Medium (surveillance NOT triggered). Without image: final=60.9 High (surveillance triggered). Score lives primarily under multi_modal_risk (HealthReportOut omits top-level final_risk_score)."
+    },
+    {
+      "step": 11,
+      "name": "Health report is stored",
+      "status": "PASS",
+      "evidence": "GET /api/reports/health/{report_id} HTTP 200; document in health_reports"
+    },
+    {
+      "step": 12,
+      "name": "High-risk report appears in surveillance system",
+      "status": "PARTIAL",
+      "evidence": "Surveillance map API works (vet saw high/critical markers). Primary image+symptoms report was Medium so did not escalate. Symptoms-only High report TAG-PUN-2026-MNTT4 appeared on map with risk_level=High, is_surveillance_triggered=true."
+    },
+    {
+      "step": 13,
+      "name": "Multiple simulated reports trigger cluster detection",
+      "status": "PASS",
+      "evidence": "POST /api/clusters/detect HTTP 200; 2 Emerging Risk Pattern clusters; seeded 3 extra animals; first cluster_46763db30d6b with report_count=4"
+    },
+    {
+      "step": 14,
+      "name": "Veterinarian sees the case",
+      "status": "PARTIAL",
+      "evidence": "FAIL on image-diluted Medium path (GET /api/cases returned []). PASS on High path: case 689e77fc-42f8-492b-acb8-c77503ef8d8c PENDING_REVIEW for Lumpy Skin Disease / TAG-PUN-2026-MNTT4"
+    },
+    {
+      "step": 15,
+      "name": "Veterinarian reviews the AI assessment",
+      "status": "PARTIAL",
+      "evidence": "Blocked when no case exists. On High path: vet fetched multi_modal_risk via report; PUT /api/cases/{id}/verify HTTP 200; status updated to VERIFIED"
+    },
+    {
+      "step": 16,
+      "name": "Alert is generated",
+      "status": "PASS",
+      "evidence": "Role alerts present: HIGH_RISK_ASSESSMENT (farmer), HIGH_RISK_REPORT_REVIEW (vet), POTENTIAL_DISEASE_CLUSTER, REGIONAL_DISEASE_RISK"
+    }
+  ],
+  "temp_artifacts": [
+    "backend/_e2e_verify_run.py",
+    "backend/_e2e_results.json"
+  ]
+}

@@ -115,6 +115,21 @@
       "dataset_label": "SIMULATED_DEMO_SIH_2026",
       "ml_training_eligible": false,
       "disclaimer": "Simulated prototype data for SIH demonstration only. Not for ML model training or official veterinary reporting."
+    },
+    {
+      "username": "samruddhi19",
+      "password": "$2b$12$X6fOXcB4BT3KeC9idB/dw.YUV8qW5Zowl5Jn9J0Xl/CxNc5dcULjq",
+      "fullname": "Samruddhi Janwalkar",
+      "role": "FARMER",
+      "phone": "9322983109",
+      "village": "Rampur",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "license_number": "",
+      "is_active": true,
+      "created_at": "2026-09-08T14:21:58.847766+00:00",
+      "updated_at": "2026-09-08T14:21:58.847766+00:00",
+      "_id": "909b5bab-3ca8-4356-b137-7edd0e51de80"
     }
   ],
   "animals": [
@@ -368,6 +383,174 @@
       "created_at": "2026-09-08T13:18:17.414609+00:00",
       "updated_at": "2026-09-08T13:18:17.414609+00:00",
       "_id": "673ace45-b829-48b9-bb55-bc31773a73e1"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-W1MYV",
+      "qr_code_identifier": "QR-SENTINEL-887EE0CD9CE7",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_w1myv_818b96.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFW0lEQVR4nO3dwW0kNxBAUclwHh2I43IUjsuBTCTtCPrQ2E+TpX3vvB6NR/NBQIVif9/3/QX8mj9+8b8HhAQNIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFB4M+vyPXXP18TfP79+9X7f/vvq5/71tPrv/X2c3j7OqepPjcnEgSEBAEhQUBIEBASBIQEASHBSXOk1X+nf6uaY+x6nV1zm2rO9lO/D0+cSBAQEgSEBAEhQUBIEBASBIQEE+ZIT07bw1m9p7RrfjJlj+g67PvwlhMJAkKCgJAgICQICAkCQoKAkGDyHOk0b+cYq+ctu/aXVt+/91M5kSAgJAgICQJCgoCQICAkCAgJAuZI/9PzhVbfC2fOs5cTCQJCgoCQICAkCAgJAkKCgJBg8hxp1/1jb+2a/1Tzorevs+tevs+Q78MTJxIEhAQBIUFASBAQEgSEBAEhwYQ50pQ9mdXPQdr1799a/dyna8j34S0nEgSEBAEhQUBIEBASBIQEASFB4Pu+7+J1xjttbjNlDjN9j6jiRIKAkCAgJAgICQJCgoCQICAkOGkf6bT72d46bY+oms/smvNci/eXVn+v3nIiQUBIEBASBIQEASFBQEgQEBJMfj7SW6fNnVbvBe2ah+zad7o27YNVnEgQEBIEhAQBIUFASBAQEgSEBCfNkd7OMXbNeaY8/2f1HtFpc7npn6cTCQJCgoCQICAkCAgJAkKCgJBgwr12T3bd2zZ9XjTlnrfP4rnirt/7EycSBIQEASFBQEgQEBIEhAQBIUHg+77vr5VW//1+9V7NlOcyrXbaPOfaNB974kSCgJAgICQICAkCQoKAkCAgJPidno/01uq5wZTn9qy2ep5zRfM9+0gwgJAgICQICAkCQoKAkCAgJJhwr93q+9am3Ie2a+9o9VzrtH2tXZxIEBASBIQEASFBQEgQEBIEhAQT9pGm3GO2el5x2r150+8P/Gy63++JEwkCQoKAkCAgJAgICQJCgoCQYPK9drv2fKar7nNb/XM/m/a+dnEiQUBIEBASBIQEASFBQEgQEBKcNEdavX+y+v1UrzNl7nHa/O0z/HN2IkFASBAQEgSEBAEhQUBIEBASBL7v+y5eZ9vf+6c//+en+gy5r6/iRIKAkCAgJAgICQJCgoCQICAkOGmOtNrqPaKfOj857blGU35fbzmRICAkCAgJAkKCgJAgICQICAkmPB9p9Z7S6jnGaU7bg6rezzVkXvTEiQQBIUFASBAQEgSEBAEhQUBI8DvtI6122nOcnpz2c6v5zHXYc5neciJBQEgQEBIEhAQBIUFASBAQEpy0j3TansyuvZTVc5Xq3rm3P/etK3o/U/bEnEgQEBIEhAQBIUFASBAQEgSEBBPutds1BzhtHrJrzrZ6j2jK7/3jXjs4n5AgICQICAkCQoKAkCAgJJgwRzrtfra3r/P0Pk/btzlt72i1XftaT5xIEBASBIQEASFBQEgQEBIEhAST50inmXIv3/R5y7VpfmgfCQYQEgSEBAEhQUBIEBASBIQEAXOkYd7Oeap50er50mfxnMc+EgwgJAgICQJCgoCQICAkCAgJJs+Rdj0/Z8r7OW0/avV86Xr5/7tr3vXEiQQBIUFASBAQEgSEBAEhQUBIMGGOdNo85Mmu+UM1P3n7+tUcprpf7tr0+VecSBAQEgSEBAEhQUBIEBASBIQEge/7vovXgd+aEwkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJDg69f9B9zYGepwEnmZAAAAAElFTkSuQmCC",
+      "species": "Cattle",
+      "breed": "Gir",
+      "age": 4.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.5784,
+      "longitude": 73.9821,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:29:45.006691+00:00",
+      "updated_at": "2026-09-08T14:29:45.006691+00:00",
+      "_id": "cfde80d8-d485-44c6-8965-54346e3738f0"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-BAVF7",
+      "qr_code_identifier": "QR-SENTINEL-4168D7CA86AE",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_bavf7_3414ef.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFT0lEQVR4nO3d0W3kNhRAUTtIHyokdaWK1JVCVIlSgT4IX4bk+JzvXXmsnQsC+0Dy+3meL+Bn/vjh3weEBA0hQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUHgz6/I9dc/Xye4//07+fzVcypvn2fU2+cfff51+PdhlBUJAkKCgJAgICQICAkCQoKAkGCnOdLs/6cfdcoc482quc3ofGz0c94f+n2wIkFASBAQEgSEBAEhQUBIEBASnDBHWjX3qJ7z9jlH5yrVHGbUKfuIrs2+D6OsSBAQEgSEBAEhQUBIEBASBIQEJ8+RdlPNhVbNc6rn73Ze3ymsSBAQEgSEBAEhQUBIEBASBIQEAXOk/2kf0exz4cx51rIiQUBIEBASBIQEASFBQEgQEBKcPEdadf7Y6fOlap9SdV7fb/s+vLEiQUBIEBASBIQEASFBQEgQEBKcMEc6ZZ/MbvOTVefOrZqbnc6KBAEhQUBIEBASBIQEASFBQEgQ+H6ep3jO8cxhfuc+oooVCQJCgoCQICAkCAgJAkKCgJBgp/1Iu53PNmrVPGf2PqhVc57r8HP/RlmRICAkCAgJAkKCgJAgICQICAlO2I9UzQFmz0N22+czqno/s9/Dfcg5fqOsSBAQEgSEBAEhQUBIEBASBIQEJ9yPtGpeMTqXmD2vGLXb3GzV+7k2mxe9sSJBQEgQEBIEhAQBIUFASBAQEuy0H2nV/T+rzqObfT5bZdX7vCfvj9rtc1qRICAkCAgJAkKCgJAgICQICAk+8Vy76vmjVs1zZp/z9qnznGvRPUhvrEgQEBIEhAQBIUFASBAQEgSEBCfPkd7MnpOsuv9n1Kr9S6fv47oWzZesSBAQEgSEBAEhQUBIEBASBIQEO92PVP1//ylzgzer9hHtdo/TNXnutOr3fWNFgoCQICAkCAgJAkKCgJAgICTYaY40Ovcwf9jzPcye112bnddXsSJBQEgQEBIEhAQBIUFASBAQEuw0R9rtHLnd9ues+rmj72G3/VT3ZvOiN1YkCAgJAkKCgJAgICQICAkCQoIT5kiz5zyz5w+7nbPnfLw950tWJAgICQJCgoCQICAkCAgJAkKCwPfzPMVzls0xTtknM/ucut+2T+w2R4LPIyQICAkCQoKAkCAgJAgICU6+H6l6/qo5zyn7ZD71PqVrs3mUFQkCQoKAkCAgJAgICQJCgoCQYKf9SLudO7fKbufIfep7HjV7vmdFgoCQICAkCAgJAkKCgJAgICQ4YY50it3Owfttv9e12b1Mo6xIEBASBIQEASFBQEgQEBIEhAQ7nWt3yn6V3eYn1c+t3v/s59yD7+2UcwKtSBAQEgSEBAEhQUBIEBASBIQEO82R3uy2D+eU+4LerLoP6vR/99u5drA/IUFASBAQEgSEBAEhQUBIcMIcadWcZ9VzZj9/9L3Nnnet2od2Rb+Xc+1gI0KCgJAgICQICAkCQoKAkODkOdJuRucMs+dCs/cXjf753e5Bujc7H8+KBAEhQUBIEBASBIQEASFBQEgQMEf6pfdB7baf597svqlRViQICAkCQoKAkCAgJAgICQJCgpPnSKvuz3mzah5yyv6c2fOlK9of5X4kOJiQICAkCAgJAkKCgJAgICQ4YY50yr6d6ly7VefFnXK+373Z/KdiRYKAkCAgJAgICQJCgoCQICAkCHw/z1M8B341KxIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASHB18/9B3h3MF/lH0LAAAAAAElFTkSuQmCC",
+      "species": "Cattle",
+      "breed": "Gir",
+      "age": 4.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.5784,
+      "longitude": 73.9821,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:33:53.566911+00:00",
+      "updated_at": "2026-09-08T14:33:53.566911+00:00",
+      "_id": "88b974af-2b82-4c9f-9bb2-3bb6988c1ec0"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-59UXB",
+      "qr_code_identifier": "QR-SENTINEL-199E126B837A",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_59uxb_5229ed.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFLklEQVR4nO3d0W3kNhRAUTvYPlRI6koVqSuFTCWTCvRB7OWKb3zO94bW2HNBIA+kvt/v9xfwe/76zf8eEBI0hAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEgV9fkevvf78meP33z9bPe7f+6u9n9TlXn2d1nTvV553+fbAjQUBIEBASBIQEASFBQEgQEBKcNEfa/f/pV63OMZ6an+yew1TrVH/H15Dvwyo7EgSEBAEhQUBIEBASBIQEASHBhDnSnZ8233hq7lT9+5/2fVhlR4KAkCAgJAgICQJCgoCQICAkmDxHmu6pOczuedHu+/c+lR0JAkKCgJAgICQICAkCQoKAkCBgjvSH7pG7m7fsPi9U/fsp7zt6ih0JAkKCgJAgICQICAkCQoKAkGDyHOm0cyyrz/PU3Klaf8q9f1PYkSAgJAgICQJCgoCQICAkCAgJJsyRppxj2X3+56n76E57n9I15Puwyo4EASFBQEgQEBIEhAQBIUFASBD4fr/fxTr8oTnJ7nvnpp8LeoodCQJCgoCQICAkCAgJAkKCgJDgpDnSaedhnjo/s/v5P3XudG3+e+2ej9mRICAkCAgJAkKCgJAgICQICAkmnEeq5jCnOW3Oc9o6q077uavsSBAQEgSEBAEhQUBIEBASBIQEJ70f6VPP/1TvR7rz035vl/cjAXeEBAEhQUBIEBASBIQEASHBJ74f6bT71k7z1Lxo1TVkrlWxI0FASBAQEgSEBAEhQUBIEBASTH4/0u71p5x7mT7vmjL3uzZ/P+1IEBASBIQEASFBQEgQEBIEhAST34/01Hxp9/qn/ftVu+/Zew35u6yyI0FASBAQEgSEBAEhQUBIEBASTD6PNOW80G6n3c9WuTZ/H3avs8qOBAEhQUBIEBASBIQEASFBQEjwieeRnron7bT3Bd3Zfa6pep5V0+dmdiQICAkCQoKAkCAgJAgICQJCgsCvr8juOUA1F1pdv1pn9/PvdtrvZ5V77WAAIUFASBAQEgSEBAEhQUBI8InnkVbXufPUOZynPu9p57Kuh9Zxrx0MJiQICAkCQoKAkCAgJAgICQLjzyPd/dxq/lDNK3bPN047v7T7OU/7vHYkCAgJAkKCgJAgICQICAkCQoKT5kje2/PsOk857e/11O/NjgQBIUFASBAQEgSEBAEhQUBI8JPOI532PKd93in37E2Z162yI0FASBAQEgSEBAEhQUBIEBASTHg/0hSn3Tu3+7xW5am53HXYOSg7EgSEBAEhQUBIEBASBIQEASHBhPNIp7mbG+w+9/LT5k7XQ+/LWn2eih0JAkKCgJAgICQICAkCQoKAkOCkOdKd0+61qzw1x6jmRVPO+UxhR4KAkCAgJAgICQJCgoCQICAkmDBHunPavGL385x2fqZy2nNe3o8EcwkJAkKCgJAgICQICAkCQoLJc6TTVHOe3e/5qdbf/ZyvzZ/3NHYkCAgJAkKCgJAgICQICAkCQoKAOdKh98Lt/rmr60y5p+710OeyI0FASBAQEgSEBAEhQUBIEBASBL7f73exznHzh+p5psyFdpsyd7rcawdzCQkCQoKAkCAgJAgICQJCggnnkU6bhzw1f5h+v9zu9V+b5zzOI8EAQoKAkCAgJAgICQJCgoCQ4KTzSPCT2ZEgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJvn7f/0ZMR+5aZT53AAAAAElFTkSuQmCC",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "age": 3.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.579,
+      "longitude": 73.9825,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:33:55.061654+00:00",
+      "updated_at": "2026-09-08T14:33:55.061654+00:00",
+      "_id": "19fef558-db6d-4376-9b59-8e14871bc6ec"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-5YPUF",
+      "qr_code_identifier": "QR-SENTINEL-E932C2A53B11",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_5ypuf_a304b3.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFRUlEQVR4nO3dwW3lNhRAUTtIHyokdaWK1JVCXImyyFoBOL4MSfmctUdf88cXBOaB5Od93x/A9/z2zT8PCAkaQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCwO8fkeuPvz5O8PX3n0PvP/rz1fs82e1zZ38/s41+D0+sSBAQEgSEBAEhQUBIEBASBIQEO82RZv8//ahqjrHb/KSagz1Z9f6zzf57WZEgICQICAkCQoKAkCAgJAgICU6YI+22r6ayar/N7PnYKtfhvw9WJAgICQJCgoCQICAkCAgJAkKCk+dIu9ntvLsnu52zx7+sSBAQEgSEBAEhQUBIEBASBIQEAXOkX5zDzJ4vrTqXb/Zz3sqKBAEhQUBIEBASBIQEASFBQEhw8hxpt/nD7PcZff6q/U6nfD+7sSJBQEgQEBIEhAQBIUFASBAQEpwwR9rtHp7Z+4v8/Dt+H0ZZkSAgJAgICQJCgoCQICAkCAgJAp/3fRfPea3Z9w7NPh+v2ufjXLv/ZkWCgJAgICQICAkCQoKAkCAgJNhpP9JP26+yan4y+/6lp+ev2qf0Nfl8v+rf0YoEASFBQEgQEBIEhAQBIUFASLDTHGn23GD2c0afv2pfUKWaC+02T1vFigQBIUFASBAQEgSEBAEhQUBIcML9SKOqfSarzmGb/fxTzpe7Ju93erLqe7AiQUBIEBASBIQEASFBQEgQEBKccK7dk9nnpK2y6v1P+dzrpfc7WZEgICQICAkCQoKAkCAgJAgICU7ejzT7HqTZc4PZ9/a89Xv4OuTepFFWJAgICQJCgoCQICAkCAgJAkKCE+ZIq/6//5R7lla9z27nDT45ZR+aFQkCQoKAkCAgJAgICQJCgoCQ4IQ50unnmO12z8+q51S+ovfZbZ+SFQkCQoKAkCAgJAgICQJCgoCQIPB53/ePuh9pt30+lWpOUs3Z3rpv7YkVCQJCgoCQICAkCAgJAkKCgJBgpznSbKvmFbP3BT1Z9T6nz/GuRXNCKxIEhAQBIUFASBAQEgSEBAEhwRv3I81WzWdWzaN2uw9qt+esYkWCgJAgICQICAkCQoKAkCAgJDjhfqQnu81bqvt5qvc5fY53bbbvaPb7WJEgICQICAkCQoKAkCAgJAgICU6eI812+v6i0c8dfZ/d5nKVVZ9rRYKAkCAgJAgICQJCgoCQICAkOPlcu1Gnn7e22/dzynxm1Kpz8KxIEBASBIQEASFBQEgQEBIEhAQ77Ufa7R6bVXOe6ny53e5x+mnn8o2yIkFASBAQEgSEBAEhQUBIEBAS7DRHeut+ld3Ouxu16t6na9GcavY9SE+sSBAQEgSEBAEhQUBIEBASBIQEJ9yPtGrfyG7zkMqq8/FW7Re6Nvv+n1iRICAkCAgJAkKCgJAgICQICAlOmCPNnofMnifMPh/PvUkt9yPBwYQEASFBQEgQEBIEhAQBIcHJc6RTzJ53rdpvM/q5b91/VbEiQUBIEBASBIQEASFBQEgQEBIEzJH+p3uQZs9DZp87Vz3/OuQ9R1mRICAkCAgJAkKCgJAgICQICAlOniPtdr/N7HnIbNW8ZfQ5s7+fa9H8apQVCQJCgoCQICAkCAgJAkKCgJDghDnSbvOW3eYqs8+7q+5r2u1cvlGz38eKBAEhQUBIEBASBIQEASFBQEgQ+Lzvu3gO/GhWJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKP7/sHL9YbEuDT86IAAAAASUVORK5CYII=",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "age": 3.5,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.58,
+      "longitude": 73.983,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:33:55.538611+00:00",
+      "updated_at": "2026-09-08T14:33:55.538611+00:00",
+      "_id": "50b291d5-225f-49c5-8526-b46bc6e9a9e2"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-L2C0S",
+      "qr_code_identifier": "QR-SENTINEL-0AA4448A91EA",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_l2c0s_bf1e8c.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFUElEQVR4nO3d0W0cNxRAUclwH1NI6nIVqcuFbCXjCgYBo0uTXJ3zrWxGyl4QyMPjfN73/QF8zY8v/vOAkKAhJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQI/PyIXP/8+3GC1+9fyfM/fc6qv8/o84w+526/725/NycSBIQEASFBQEgQEBIEhAQBIcFOc6TZ/59+1Ow5RjV32m1uM/s5X2/6fXAiQUBIEBASBIQEASFBQEgQEBKcMEdaNfeoPqd6zmoOM+qUPaJrs+/DKCcSBIQEASFBQEgQEBIEhAQBIcHJc6TdzJ7zjM5JVt2zN3ue9q6cSBAQEgSEBAEhQUBIEBASBIQEAXOkvzSHOWVviv/HiQQBIUFASBAQEgSEBAEhQUBIcPIcadX9Y6vMfp9S9Tmn3L+3GycSBIQEASFBQEgQEBIEhAQBIcEJc6RT9mR2m5+suneuep7Tvw+jnEgQEBIEhAQBIUFASBAQEgSEBIHP+76LzznebnObU+Ywp+8RVZxIEBASBIQEASFBQEgQEBIEhAQ77SPNnsOcsocz++dPmfNck/eXZn+vRjmRICAkCAgJAkKCgJAgICQICAlOfj/Sk93mJ6vunVs1D1m173Qt2gerOJEgICQICAkCQoKAkCAgJAgICU6eI83ek1k1h/luf5/Z85xr0f2Bo5xIEBASBIQEASFBQEgQEBIEhATvuI9U3Yc2ey9o1T11p8zTXpP/e82+H2+UEwkCQoKAkCAgJAgICQJCgoCQIPB53/fR+y2nvKdo1b1tq55/1ec8sY8EBxASBIQEASFBQEgQEBIEhAQn7yPNntusuhfu6d97yu81avY854rmb/aR4ABCgoCQICAkCAgJAkKCgJBgpznSbveS7bav8mTV3tTsfafrkM+vOJEgICQICAkCQoKAkCAgJAgICXa6127UqvvrTt/D+W732l2bvW/qiRMJAkKCgJAgICQICAkCQoKAkODkOdK77u3Mfl/TKqt+r9dm86InTiQICAkCQoKAkCAgJAgICQJCghPej1TNDUbnCe/6PqLZ85lV86uXfSRASBAQEgSEBAEhQUBIEBAS7DRHqvZSdtv/qX6+mtus2muaPV+6Ntu/GuVEgoCQICAkCAgJAkKCgJAgICR4x3vtZu+f7Paen1Gr7otbdX/dNXm+VH2vnEgQEBIEhAQBIUFASBAQEgSEBCfMkVbNAU6fR62y2313ldn34DmRICAkCAgJAkKCgJAgICQICAnecR9plVX7M6ve8zP7Hr9Ru72XaZQTCQJCgoCQICAkCAgJAkKCgJDghPcj7WZ0bjD7fUrveo/cFc2dVs3ZRjmRICAkCAgJAkKCgJAgICQICAl2miOdsm9Tfc7seVT1PKfv+YyavTf1xIkEASFBQEgQEBIEhAQBIUFASHDCHOlJNd+o5gOr5jCr3qe02+ecfi+fEwkCQoKAkCAgJAgICQJCgoCQ4OQ50m6qvaBV867Rn1/1/Nei+aF9JDiAkCAgJAgICQJCgoCQICAkCJgj/YfZ+y2r9mpmP+eo2XMe+0hwACFBQEgQEBIEhAQBIUFASBD4vO/76PfS7PY8q+7BWzWPWvW+ptei++ueOJEgICQICAkCQoKAkCAgJAgICU7YR1r1/pxRs/d8dptrVc95+t+n4kSCgJAgICQICAkCQoKAkCAgJNhpHwm+MycSBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhwcfX/QGKo0R62sJrdQAAAABJRU5ErkJggg==",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "age": 4.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.5775,
+      "longitude": 73.981,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:33:55.989713+00:00",
+      "updated_at": "2026-09-08T14:33:55.989713+00:00",
+      "_id": "f4f2de5e-e7fa-4493-a345-de852bbb96db"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-MNTT4",
+      "qr_code_identifier": "QR-SENTINEL-FDA2DC0BC7EA",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_mntt4_6395d4.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFT0lEQVR4nO3d0W0jNxRAUTtIH1NI6koVW1cKUSWzH/s9AQhfgqR0zrdXGku+ILAPJL/v+/4CfuavH/57QEjQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBP7+ilz//Po6weu/f7d6/qfneVI9Z/W+u32esz+HJ1YkCAgJAkKCgJAgICQICAkCQoKd5kiz/59+1Kp5y6rnGZ3zPJk9/3kd/vfwxIoEASFBQEgQEBIEhAQBIUFASHDCHOmUOc8pz1k9z277ha7NPudRViQICAkCQoKAkCAgJAgICQJCgpPnSLup9vk8/Xy1X2j2OXKr5jCnsyJBQEgQEBIEhAQBIUFASBAQEgTMkTY9z232vqPZ9yN9GisSBIQEASFBQEgQEBIEhAQBIcHJc6Td5g+n3CO06jy62d/Xa7O/h1FWJAgICQJCgoCQICAkCAgJAkKCE+ZIu93D82TVuXPv+vOn/z2MsiJBQEgQEBIEhAQBIUFASBAQEgS+7/suXudt7TafGZ3DVPt8nGv3/6xIEBASBIQEASFBQEgQEBIEhAQ77Ud61/0qs+cwo6r50uj3tWqf0mvy+X7V92tFgoCQICAkCAgJAkKCgJAgICTYaY40e84w+r6jdptfzVZ9X6v2I7022wdlRYKAkCAgJAgICQJCgoCQICAkeMf9SNX7PqnmIav2z5xyvtw1eb/Tk1WfgxUJAkKCgJAgICQICAkCQoKAkGCnOdKTU/YjzXb6nOSJ+53+sCJBQEgQEBIEhAQBIUFASBAQEpxwrt2q1z99PjN7bjN7jncdfm/SKCsSBIQEASFBQEgQEBIEhAQBIUHg+77vr5OtmjPMnmtV73v6PVGvQ+aHViQICAkCQoKAkCAgJAgICQJCghPOtVu1r2b2fphqXvFp+3Ze0fPs9vtakSAgJAgICQJCgoCQICAkCAgJTtiPtNu8YrbZ58jtZvY+q2vy34/9SLARIUFASBAQEgSEBAEhQUBIcPJ+pCez9yO96/OvOsdvt3PnrkVzPCsSBIQEASFBQEgQEBIEhAQBIcFO+5F2O+dt1Clzqkr1ea46l283ViQICAkCQoKAkCAgJAgICQJCgne8H2n053ebR51ynt7sz+fa7PVnP48VCQJCgoCQICAkCAgJAkKCgJDg5DnSbvOK3fa9zN7nU/38bvu1rkXva0WCgJAgICQICAkCQoKAkCAgJHjH+5F223+yap5zyn1Ns+dU1+T7lCpWJAgICQJCgoCQICAkCAgJAkKCne5HOt2q+5Gq1z9lnnb6vOiJFQkCQoKAkCAgJAgICQJCgoCQYKf9SKv224yq5g+r9iNVc6fZ39e16LzBVfdiWZEgICQICAkCQoKAkCAgJAgICU44127VvpFT5lq77Zua/TqjVs2FRlmRICAkCAgJAkKCgJAgICQICAlOvh9p9v6c2VbNZ0afZ/bns9u87uV+JDiXkCAgJAgICQJCgoCQICAkOHmOdIpV85lV85+n9z1lXreKFQkCQoKAkCAgJAgICQJCgoCQIGCO9ObnsFXPc8r5eNei8/esSBAQEgSEBAEhQUBIEBASBIQEJ8+RdrvfprLq/LrR5/m03/eavK/JigQBIUFASBAQEgSEBAEhQUBIEPi+7/ujzh8bnTNUP7/qnqjZv9du+69WsSJBQEgQEBIEhAQBIUFASBAQEuw0R4JPZkWCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAk+Pq533YOE+QTNeRdAAAAAElFTkSuQmCC",
+      "species": "Cattle",
+      "breed": "Gir",
+      "age": 5.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "SUSPECTED",
+      "latitude": 18.5789,
+      "longitude": 73.9828,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T14:35:04.864866+00:00",
+      "updated_at": "2026-09-08T14:35:05.066093+00:00",
+      "_id": "effe4d47-6425-470d-826a-992b4a9f1570"
+    },
+    {
+      "animal_id": "TAG-PUN-2026-88J4X",
+      "qr_code_identifier": "QR-SENTINEL-4F4FA74B348A",
+      "qr_code_url": "/uploads/qrcodes/qr_tag_pun_2026_88j4x_734b76.png",
+      "qr_code_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAIAAAAI7H7bAAAFSUlEQVR4nO3d0W1jNxBAUW+wfaiQ1JUqtq4UokqUCvTB+BJDyud8e6VnWRcEdkDy1+v1+gK+569v/ntASNAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEhAQBIUFASBAQEgSEBAEhQUBIEBASBIQEASFBQEgQEBIEfn9FHn//+brB899/kud/9zpTn8/q86w+52m/72mfmxUJAkKCgJAgICQICAkCQoKAkOCkOdLu/6dftXuOcdpcqHqe1Tnb6nM+P/T7YEWCgJAgICQICAkCQoKAkCAgJLhhjjQ195ian1Tzlsot+4geh30fVlmRICAkCAgJAkKCgJAgICQICAluniOd5rT9NlPn7FXn/v00ViQICAkCQoKAkCAgJAgICQJCgoA50qHnyK3+vDnPLCsSBIQEASFBQEgQEBIEhAQBIcHNc6Sp88d+2r6g1deZOpfvecn34R0rEgSEBAEhQUBIEBASBIQEASHBDXOkW/bJ7J7n7L5naff+qGq+9Ljk+7DKigQBIUFASBAQEgSEBAEhQUBIEPj1er2K17neaXObW+Ywt+8jqliRICAkCAgJAkKCgJAgICQICAlOmiOddj7b1Dxkal/Q6uvs9ti8f+m0z8eKBAEhQUBIEBASBIQEASFBQEjwk+5Hmrq3Z/V9q99rah4ytd/pMbQfrGJFgoCQICAkCAgJAkKCgJAgICS4eY5UzQFO259TzbumnvOdqXnO47D9Zu9YkSAgJAgICQJCgoCQICAkCAgJbr4faercs9XXWbU6b7llXrT6+s/N+6NOe04rEgSEBAEhQUBIEBASBIQEASHBSfuRTpsnnLZP6bS51i3znOclf18rEgSEBAEhQUBIEBASBIQEASHBSfuRpu6r2T2fmZpjTO1fOm2u9bhkfmhFgoCQICAkCAgJAkKCgJAgICS44X6k085te2fq/qLTzuVbtfvepOfQvUyrrEgQEBIEhAQBIUFASBAQEgSEBJ94P9Itc5vdr1/tw5n6+Xem3nc3KxIEhAQBIUFASBAQEgSEBAEhwc1zpNPOMdv9vtXzTJn63J6HzYvesSJBQEgQEBIEhAQBIUFASBAQEtxwrt3UfpKp+cPU3GnVp86ppliRICAkCAgJAkKCgJAgICQICAlO2o80dV7cbp96v9M7t+yzepojwecREgSEBAEhQUBIEBASBIQEP+l+pHeq+3mq16/e97Tf97TzBivV39eKBAEhQUBIEBASBIQEASFBQEhwwxzJ/OT//fxuuz/P0+zev2RFgoCQICAkCAgJAkKCgJAgICS4eT/SaabOc5ua51Tve9p+rVX2I8FBhAQBIUFASBAQEgSEBAEhQeD3V+SW/SpT9x3dPi+a+hyeh92D9I4VCQJCgoCQICAkCAgJAkKCgJDgpDnSaXOAqTnMO1P3/OzeR7T6PLtN/b5WJAgICQJCgoCQICAkCAgJAkKCG+ZIt8x5pu5HWrV7v9DU66w67e9iRYKAkCAgJAgICQJCgoCQICAkuHmOdJqpc9h2n4P3qfcgPQ87H8+KBAEhQUBIEBASBIQEASFBQEgQMEeK5x5T+2F2z4tOe/5V9iPBBYQEASFBQEgQEBIEhAQBIcHNc6Sp+3PeWZ2fTM03qjlPtZ9n9z6oW+6DsiJBQEgQEBIEhAQBIUFASBAQEgR+vV6vq+/JuWVedNr5cp/6vg9zJLiXkCAgJAgICQJCgoCQICAkOGmOBD+ZFQkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJDg6/v+A82vNWiLAJ4JAAAAAElFTkSuQmCC",
+      "species": "Cattle",
+      "breed": "Gir",
+      "age": 4.0,
+      "gender": "Female",
+      "health_history": "None",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "owner_phone": "+91 9822011223",
+      "health_status": "HEALTHY",
+      "latitude": 18.5784,
+      "longitude": 73.9821,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "is_simulated_demo": false,
+      "created_at": "2026-09-08T15:17:25.972762+00:00",
+      "updated_at": "2026-09-08T15:17:25.972762+00:00",
+      "_id": "927bb9de-f2d2-4e74-a172-91b6f5d063d1"
     }
   ],
   "health_records": [
@@ -614,7 +797,36 @@
       "_id": "62626bae-8f6d-4f2c-98e1-16e12931029d"
     }
   ],
-  "disease_cases": [],
+  "disease_cases": [
+    {
+      "_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "animal_tag": "TAG-PUN-2026-MNTT4",
+      "health_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "reported_disease": "Lumpy Skin Disease",
+      "disease": "Lumpy Skin Disease",
+      "reporting_source": "FARMER_SELF_REPORT",
+      "exact_latitude": 18.5789,
+      "exact_longitude": 73.9828,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "latitude": 18.5789,
+      "longitude": 73.9828,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "status": "VERIFIED",
+      "is_quarantine_required": true,
+      "risk_score": 60.9,
+      "risk_level": "High",
+      "reported_at": "2026-09-08T14:35:05.066093+00:00",
+      "created_at": "2026-09-08T14:35:05.066093+00:00",
+      "updated_at": "2026-09-08T14:35:05.066093+00:00",
+      "verified_by": "dr_anita",
+      "verification_date": "2026-09-08T14:35:56.140796"
+    }
+  ],
   "vaccinations": [
     {
       "animal_id": "TAG-MH-2026-SIM01",
@@ -945,12 +1157,369 @@
       "is_dismissed": false,
       "is_veterinary_prescription": false,
       "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "d5ecbecf-38e2-41b7-95cf-034f30f65b50",
+      "id": "d5ecbecf-38e2-41b7-95cf-034f30f65b50",
+      "recipient_role": "VETERINARIAN",
+      "recipient_id": null,
+      "alert_type": "POTENTIAL_DISEASE_CLUSTER",
+      "severity": "CRITICAL",
+      "title": "Surveillance Alert: Potential Lumpy Skin Disease (LSD) Cluster (4 Reports)",
+      "message": "Density surveillance detected an Emerging Risk Pattern: 4 high-risk reports of Lumpy Skin Disease (LSD) across 3 farm(s) within a 0.5 km radius in Haveli. Not a confirmed outbreak; field verification required.",
+      "timestamp": "2026-09-08T14:33:57.407669+00:00",
+      "created_at": "2026-09-08T14:33:57.407669+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_46763db30d6b",
+        "disease": "Lumpy Skin Disease (LSD)",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Inspect cluster centroid coordinates and spatial perimeter in the Disease Surveillance Map. 2. Coordinate with mobile veterinary units to establish an active 5km ring surveillance buffer. 3. Prioritize diagnostic specimen collection from symptomatic animals across the affected holdings. 4. Advise village panchayat and paravets regarding vector management and early case reporting.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "99a8e8a0-912e-478b-ac6a-54f40f2c52c5",
+      "id": "99a8e8a0-912e-478b-ac6a-54f40f2c52c5",
+      "recipient_role": "ADMIN",
+      "recipient_id": null,
+      "alert_type": "EMERGING_CLUSTERS",
+      "severity": "HIGH",
+      "title": "Emerging Cluster: Lumpy Skin Disease (LSD) Detected in Haveli, Pune",
+      "message": "Spatio-temporal intelligence indicates an Emerging Risk Pattern with 4 high-risk cases across 3 farm(s) in Haveli. Preliminary surveillance signal.",
+      "timestamp": "2026-09-08T14:33:57.499163+00:00",
+      "created_at": "2026-09-08T14:33:57.499163+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_46763db30d6b",
+        "disease": "Lumpy Skin Disease (LSD)",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Review district-wide veterinary staff coverage and mobile dispensary deployment schedules. 2. Verify sufficient regional buffer inventory for ring vaccination and personal protective kits. 3. Coordinate with district animal husbandry officers for inter-taluka livestock movement advisories.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "321f81e8-8ea5-48d6-a4b2-7fb92668c605",
+      "id": "321f81e8-8ea5-48d6-a4b2-7fb92668c605",
+      "recipient_role": "ADMIN",
+      "recipient_id": null,
+      "alert_type": "CRITICAL_RISK_PATTERNS",
+      "severity": "CRITICAL",
+      "title": "Critical Risk Pattern: Severe Lumpy Skin Disease (LSD) Pattern in Pune",
+      "message": "CRITICAL RISK PATTERN: Cluster severity has escalated to Critical tier (Mean Score: 90.9/100, 4 clustered high-risk cases). Urgent multi-departmental containment response needed.",
+      "timestamp": "2026-09-08T14:33:57.592201+00:00",
+      "created_at": "2026-09-08T14:33:57.592201+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_46763db30d6b",
+        "disease": "Lumpy Skin Disease (LSD)",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": null,
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Convene the District Livestock Disease Emergency Oversight Committee. 2. Authorize rapid deployment of state epidemiological investigation teams and emergency diagnostics. 3. Establish regional quarantine coordination and enforce sanitization barriers around livestock transit points. 4. Release official public health and farmer awareness bulletins through certified agricultural channels.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "23b56e34-c8f1-49af-93a2-f2016c0f89ac",
+      "id": "23b56e34-c8f1-49af-93a2-f2016c0f89ac",
+      "recipient_role": "FARMER",
+      "recipient_id": null,
+      "alert_type": "REGIONAL_DISEASE_RISK",
+      "severity": "CRITICAL",
+      "title": "Biosecurity Alert: Elevated Lumpy Skin Disease (LSD) Risk in Haveli, Pune",
+      "message": "Epidemiological surveillance has identified elevated Lumpy Skin Disease (LSD) activity in the Haveli sub-district. Local livestock keepers are advised to enforce preventative farm biosecurity protocols.",
+      "timestamp": "2026-09-08T14:33:57.689922+00:00",
+      "created_at": "2026-09-08T14:33:57.689922+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_46763db30d6b",
+        "disease": "Lumpy Skin Disease (LSD)",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Inspect all livestock twice daily for skin nodules, oral/foot blisters, fever, or sudden milk drops. 2. Install fine insect mesh and apply approved botanical fly/tick repellents around animal shelters. 3. Disinfect animal sheds, stalls, and watering troughs with lime powder or approved farm virucides. 4. Restrict herd mixing at public grazing lands or livestock markets until regional transmission subsides. 5. Report any suspicious symptoms immediately through the Sentinel health reporting tool.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "0ce70300-286b-4216-a391-e4a6586c1bd4",
+      "id": "0ce70300-286b-4216-a391-e4a6586c1bd4",
+      "recipient_role": "VETERINARIAN",
+      "recipient_id": null,
+      "alert_type": "POTENTIAL_DISEASE_CLUSTER",
+      "severity": "CRITICAL",
+      "title": "Surveillance Alert: Potential Suspected Disease Cluster (4 Reports)",
+      "message": "Density surveillance detected an Emerging Risk Pattern: 4 high-risk reports of Suspected Disease across 3 farm(s) within a 0.5 km radius in Haveli. Not a confirmed outbreak; field verification required.",
+      "timestamp": "2026-09-08T14:33:57.995836+00:00",
+      "created_at": "2026-09-08T14:33:57.995836+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_5f5fd8f2a6f3",
+        "disease": "Suspected Disease",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Inspect cluster centroid coordinates and spatial perimeter in the Disease Surveillance Map. 2. Coordinate with mobile veterinary units to establish an active 5km ring surveillance buffer. 3. Prioritize diagnostic specimen collection from symptomatic animals across the affected holdings. 4. Advise village panchayat and paravets regarding vector management and early case reporting.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "60937865-af53-4f99-a82a-1131d7b21e16",
+      "id": "60937865-af53-4f99-a82a-1131d7b21e16",
+      "recipient_role": "ADMIN",
+      "recipient_id": null,
+      "alert_type": "EMERGING_CLUSTERS",
+      "severity": "HIGH",
+      "title": "Emerging Cluster: Suspected Disease Detected in Haveli, Pune",
+      "message": "Spatio-temporal intelligence indicates an Emerging Risk Pattern with 4 high-risk cases across 3 farm(s) in Haveli. Preliminary surveillance signal.",
+      "timestamp": "2026-09-08T14:33:58.084044+00:00",
+      "created_at": "2026-09-08T14:33:58.084044+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_5f5fd8f2a6f3",
+        "disease": "Suspected Disease",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Review district-wide veterinary staff coverage and mobile dispensary deployment schedules. 2. Verify sufficient regional buffer inventory for ring vaccination and personal protective kits. 3. Coordinate with district animal husbandry officers for inter-taluka livestock movement advisories.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "dcaa3ef9-8e3a-49c9-be7d-a6edb3c33ada",
+      "id": "dcaa3ef9-8e3a-49c9-be7d-a6edb3c33ada",
+      "recipient_role": "ADMIN",
+      "recipient_id": null,
+      "alert_type": "CRITICAL_RISK_PATTERNS",
+      "severity": "CRITICAL",
+      "title": "Critical Risk Pattern: Severe Suspected Disease Pattern in Pune",
+      "message": "CRITICAL RISK PATTERN: Cluster severity has escalated to Critical tier (Mean Score: 90.9/100, 4 clustered high-risk cases). Urgent multi-departmental containment response needed.",
+      "timestamp": "2026-09-08T14:33:58.177288+00:00",
+      "created_at": "2026-09-08T14:33:58.177288+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_5f5fd8f2a6f3",
+        "disease": "Suspected Disease",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": null,
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Convene the District Livestock Disease Emergency Oversight Committee. 2. Authorize rapid deployment of state epidemiological investigation teams and emergency diagnostics. 3. Establish regional quarantine coordination and enforce sanitization barriers around livestock transit points. 4. Release official public health and farmer awareness bulletins through certified agricultural channels.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "9825f280-5ead-49d2-85b1-0fd94fe69263",
+      "id": "9825f280-5ead-49d2-85b1-0fd94fe69263",
+      "recipient_role": "FARMER",
+      "recipient_id": null,
+      "alert_type": "REGIONAL_DISEASE_RISK",
+      "severity": "CRITICAL",
+      "title": "Biosecurity Alert: Elevated Suspected Disease Risk in Haveli, Pune",
+      "message": "Epidemiological surveillance has identified elevated Suspected Disease activity in the Haveli sub-district. Local livestock keepers are advised to enforce preventative farm biosecurity protocols.",
+      "timestamp": "2026-09-08T14:33:58.271203+00:00",
+      "created_at": "2026-09-08T14:33:58.271203+00:00",
+      "related_entity": {
+        "animal_id": null,
+        "animal_tag": null,
+        "health_report_id": null,
+        "disease_report_id": null,
+        "cluster_id": "cluster_5f5fd8f2a6f3",
+        "disease": "Suspected Disease",
+        "vaccination_id": null,
+        "village": null,
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": null,
+      "related_report_id": null,
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "1. Inspect all livestock twice daily for skin nodules, oral/foot blisters, fever, or sudden milk drops. 2. Install fine insect mesh and apply approved botanical fly/tick repellents around animal shelters. 3. Disinfect animal sheds, stalls, and watering troughs with lime powder or approved farm virucides. 4. Restrict herd mixing at public grazing lands or livestock markets until regional transmission subsides. 5. Report any suspicious symptoms immediately through the Sentinel health reporting tool.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "de476dd8-eeb5-4df2-b051-9dd1579c495b",
+      "id": "bf579cda-d6d8-4983-8e75-562d0d541e9f",
+      "alert_type": "OUTBREAK_EARLY_WARNING",
+      "severity": "MODERATE",
+      "title": "High Risk Alert: Suspected Lumpy Skin Disease in TAG-PUN-2026-MNTT4",
+      "message": "Multi-modal AI risk reached 60.9/100 (High) for Cattle (TAG-PUN-2026-MNTT4) in Wagholi, Haveli. Clinical review and quarantine triage required.",
+      "related_animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "related_case_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "related_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "district": "Pune",
+      "is_read": false,
+      "created_at": "2026-09-08T14:35:05.066093+00:00"
+    },
+    {
+      "_id": "d129c69c-ec9a-4baf-9297-7d6cc62c2a36",
+      "id": "d129c69c-ec9a-4baf-9297-7d6cc62c2a36",
+      "recipient_role": "FARMER",
+      "recipient_id": "farmer_ramesh",
+      "alert_type": "HIGH_RISK_ASSESSMENT",
+      "severity": "HIGH",
+      "title": "Urgent: High-Risk Health Assessment for TAG-PUN-2026-MNTT4",
+      "message": "Multi-modal assessment for Cattle (TAG-PUN-2026-MNTT4) computed a risk score of 60.9/100 (High) for suspected Lumpy Skin Disease. Immediate physical isolation required to safeguard the herd.",
+      "timestamp": "2026-09-08T14:35:05.471655+00:00",
+      "created_at": "2026-09-08T14:35:05.471655+00:00",
+      "related_entity": {
+        "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+        "animal_tag": "TAG-PUN-2026-MNTT4",
+        "health_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+        "disease_report_id": null,
+        "cluster_id": null,
+        "disease": "Lumpy Skin Disease",
+        "vaccination_id": null,
+        "village": "Wagholi",
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "related_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "related_case_id": null,
+      "district": "Pune",
+      "recommended_action": "Isolate the affected animal in a dry, well-ventilated stall. Provide clean water and maintain strict shed hygiene. Do NOT administer unverified medications or antibiotics without an authorized clinical prescription. Request immediate on-farm clinical inspection by a licensed veterinarian.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "_id": "4303a18c-e5b7-4f97-a9f8-31fbf853a947",
+      "id": "4303a18c-e5b7-4f97-a9f8-31fbf853a947",
+      "recipient_role": "VETERINARIAN",
+      "recipient_id": null,
+      "alert_type": "HIGH_RISK_REPORT_REVIEW",
+      "severity": "HIGH",
+      "title": "Clinical Triage Required: Suspected Lumpy Skin Disease in Wagholi, Haveli",
+      "message": "Autonomous AI surveillance escalated an urgent case: Animal TAG-PUN-2026-MNTT4 evaluated at risk score 60.9/100 (High) for suspected Lumpy Skin Disease. Clinical adjudication and quarantine verification required.",
+      "timestamp": "2026-09-08T14:35:05.556531+00:00",
+      "created_at": "2026-09-08T14:35:05.556531+00:00",
+      "related_entity": {
+        "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+        "animal_tag": "TAG-PUN-2026-MNTT4",
+        "health_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+        "disease_report_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+        "cluster_id": null,
+        "disease": "Lumpy Skin Disease",
+        "vaccination_id": null,
+        "village": "Wagholi",
+        "taluka": "Haveli",
+        "district": "Pune"
+      },
+      "related_animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "related_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "related_case_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "district": "Pune",
+      "recommended_action": "1. Review uploaded photographic lesions and symptom severity in the Sentinel triage console. 2. Contact the herd keeper to confirm physical isolation status. 3. Schedule an on-site clinical visit to perform physical examination and collect confirmatory lab samples (PCR/ELISA). 4. Submit independent veterinary clinical adjudication and formalize statutory movement restrictions if necessary.",
+      "is_read": false,
+      "is_dismissed": false,
+      "is_veterinary_prescription": false,
+      "safety_disclaimer": "Notice: Recommended actions provide biosecurity, physical isolation, and triage guidance only. They do NOT constitute veterinary medical prescriptions or therapeutic drug regimens. Never administer unverified pharmaceuticals without direct clinical examination and prescription by a licensed veterinarian."
+    },
+    {
+      "type": "TREATMENT_PLAN",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "farm_id": "farmer_ramesh",
+      "disease": "Lumpy Skin Disease",
+      "risk_level": "High",
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "message": "Veterinarian verified Lumpy Skin Disease for animal effe4d47-6425-470d-826a-992b4a9f1570. Treatment plan details: Isolation + NSAID + fly control...",
+      "status": "UNREAD",
+      "created_at": "2026-09-08T14:35:56.397008",
+      "_id": "a4434c51-f409-40a8-86ce-744f092c0475"
     }
   ],
   "outbreak_clusters": [
     {
-      "id": "cluster_96f0d6a0b30e",
-      "cluster_id": "cluster_96f0d6a0b30e",
+      "id": "cluster_46763db30d6b",
+      "cluster_id": "cluster_46763db30d6b",
       "cluster_label": "Potential Disease Cluster",
       "pattern_type": "Emerging Risk Pattern",
       "disease": "Lumpy Skin Disease (LSD)",
@@ -978,10 +1547,10 @@
         "d308ba9d-a48a-4e63-b705-af0010ed7dc5"
       ],
       "affected_animal_ids": [
-        "TAG-MH-2026-SIM07",
-        "TAG-MH-2026-SIM06",
         "TAG-MH-2026-SIM01",
-        "TAG-MH-2026-SIM05"
+        "TAG-MH-2026-SIM07",
+        "TAG-MH-2026-SIM05",
+        "TAG-MH-2026-SIM06"
       ],
       "center_location": {
         "latitude": 18.58035,
@@ -995,7 +1564,7 @@
       "radius": 0.5,
       "eps_threshold_km": 5.0,
       "min_reports_threshold": 3,
-      "time_window_days": 7,
+      "time_window_days": 14,
       "temporal_span_days": 1,
       "earliest_report_at": "2026-09-07T23:17:20.784315",
       "latest_report_at": "2026-09-08T07:17:20.784315",
@@ -1013,14 +1582,14 @@
       "is_confirmed_outbreak": false,
       "is_veterinary_diagnosis": false,
       "disclaimer": "This is an AI-assisted spatio-temporal cluster detection (Emerging Risk Pattern) derived from density clustering of high-risk reports. It does NOT constitute a confirmed epidemiological outbreak or official veterinary diagnosis. Field verification by a certified veterinary authority is required.",
-      "detected_at": "2026-09-08T13:17:22.823855+00:00",
-      "created_at": "2026-09-08T13:17:22.823875+00:00",
-      "updated_at": "2026-09-08T13:17:22.832158+00:00",
-      "_id": "4b707a2d-f9da-4b4b-83b9-655399624cc5"
+      "detected_at": "2026-09-08T14:33:57.006966+00:00",
+      "created_at": "2026-09-08T14:33:57.006985+00:00",
+      "updated_at": "2026-09-08T14:33:57.017455+00:00",
+      "_id": "9c719f4d-e0c9-4d6f-b29d-ce793c1807af"
     },
     {
-      "id": "cluster_1a58329b8844",
-      "cluster_id": "cluster_1a58329b8844",
+      "id": "cluster_5f5fd8f2a6f3",
+      "cluster_id": "cluster_5f5fd8f2a6f3",
       "cluster_label": "Potential Disease Cluster",
       "pattern_type": "Emerging Risk Pattern",
       "disease": "Suspected Disease",
@@ -1048,10 +1617,10 @@
         "c7ede7b6-1712-4b10-bdb3-2e9b9508cccc"
       ],
       "affected_animal_ids": [
-        "TAG-MH-2026-SIM07",
-        "TAG-MH-2026-SIM06",
         "TAG-MH-2026-SIM01",
-        "TAG-MH-2026-SIM05"
+        "TAG-MH-2026-SIM07",
+        "TAG-MH-2026-SIM05",
+        "TAG-MH-2026-SIM06"
       ],
       "center_location": {
         "latitude": 18.58035,
@@ -1065,7 +1634,7 @@
       "radius": 0.5,
       "eps_threshold_km": 5.0,
       "min_reports_threshold": 3,
-      "time_window_days": 7,
+      "time_window_days": 14,
       "temporal_span_days": 1,
       "earliest_report_at": "2026-09-07T23:17:20.784315",
       "latest_report_at": "2026-09-08T07:17:20.784315",
@@ -1083,10 +1652,10 @@
       "is_confirmed_outbreak": false,
       "is_veterinary_diagnosis": false,
       "disclaimer": "This is an AI-assisted spatio-temporal cluster detection (Emerging Risk Pattern) derived from density clustering of high-risk reports. It does NOT constitute a confirmed epidemiological outbreak or official veterinary diagnosis. Field verification by a certified veterinary authority is required.",
-      "detected_at": "2026-09-08T13:17:22.832091+00:00",
-      "created_at": "2026-09-08T13:17:22.832110+00:00",
-      "updated_at": "2026-09-08T13:17:22.832158+00:00",
-      "_id": "4b6c96ce-5916-44ab-9370-d91c5c364e46"
+      "detected_at": "2026-09-08T14:33:57.017396+00:00",
+      "created_at": "2026-09-08T14:33:57.017416+00:00",
+      "updated_at": "2026-09-08T14:33:57.017455+00:00",
+      "_id": "cda2400a-d66b-41f4-948a-edbdcef7dfed"
     }
   ],
   "audit_logs": [
@@ -1105,6 +1674,69 @@
       "role": "FARMER",
       "timestamp": "2026-09-08T13:18:17.414609+00:00",
       "_id": "7928ab59-986f-41f3-a7ab-133bf99b880c"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-W1MYV",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:29:45.006691+00:00",
+      "_id": "87c0529c-6b51-4143-b133-83a68a2fdfe6"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-BAVF7",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:33:53.566911+00:00",
+      "_id": "17677436-aea6-4999-bdba-2c8fe00d09e9"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-59UXB",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:33:55.061654+00:00",
+      "_id": "0aec2601-364d-4628-a684-58f5d2fada29"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-5YPUF",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:33:55.538611+00:00",
+      "_id": "a7f2e609-e2a0-4a64-a61d-8f265a508496"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-L2C0S",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:33:55.989713+00:00",
+      "_id": "8942b0ab-fd87-4700-9c5f-acaa1d42d903"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-MNTT4",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T14:35:04.864866+00:00",
+      "_id": "ab80be19-1df9-4366-bb36-768cb4b1b826"
+    },
+    {
+      "action": "VERIFY_CASE_VERIFIED",
+      "user": "dr_anita",
+      "details": "Case 689e77fc-42f8-492b-acb8-c77503ef8d8c status updated to VERIFIED by dr_anita",
+      "timestamp": "2026-09-08T14:35:56.487531",
+      "_id": "5c7bd8d0-4e82-4357-abaf-c7cd4f99649c"
+    },
+    {
+      "action": "ANIMAL_REGISTRATION",
+      "animal_id": "TAG-PUN-2026-88J4X",
+      "performed_by": "farmer_ramesh",
+      "role": "FARMER",
+      "timestamp": "2026-09-08T15:17:25.972762+00:00",
+      "_id": "fcd901ee-0da0-4448-932b-de7e51d04695"
     }
   ],
   "temp_test": [
@@ -1372,6 +2004,32 @@
       "ml_training_eligible": false,
       "disclaimer": "Simulated prototype data for SIH demonstration only. Not for ML model training or official veterinary reporting.",
       "_id": "d308ba9d-a48a-4e63-b705-af0010ed7dc5"
+    },
+    {
+      "_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "animal_tag": "TAG-PUN-2026-MNTT4",
+      "health_report_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "reported_disease": "Lumpy Skin Disease",
+      "disease": "Lumpy Skin Disease",
+      "reporting_source": "FARMER_SELF_REPORT",
+      "exact_latitude": 18.5789,
+      "exact_longitude": 73.9828,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "latitude": 18.5789,
+      "longitude": 73.9828,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "status": "PENDING_REVIEW",
+      "is_quarantine_required": true,
+      "risk_score": 60.9,
+      "risk_level": "High",
+      "reported_at": "2026-09-08T14:35:05.066093+00:00",
+      "created_at": "2026-09-08T14:35:05.066093+00:00",
+      "updated_at": "2026-09-08T14:35:05.066093+00:00"
     }
   ],
   "veterinarian_reviews": [],
@@ -2005,6 +2663,1625 @@
       "animal_health_status": "HEALTHY",
       "recorded_at": "2026-09-08T13:18:19.436338+00:00",
       "created_at": "2026-09-08T13:18:19.436338+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "ad2c9718-8a78-4899-bfa0-61779d83b20e",
+      "id": "ad2c9718-8a78-4899-bfa0-61779d83b20e",
+      "animal_id": "cfde80d8-d485-44c6-8965-54346e3738f0",
+      "animal_tag": "TAG-PUN-2026-W1MYV",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_994077c825e1.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 228.4
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 12.737
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 7.69
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 55.7,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 57.5,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 15.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 15.8,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 55.7,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:29:51.920632+00:00",
+      "created_at": "2026-09-08T14:29:51.920632+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "0b539a5d-b792-4140-b629-47db50f08387",
+      "id": "0b539a5d-b792-4140-b629-47db50f08387",
+      "animal_id": "88b974af-2b82-4c9f-9bb2-3bb6988c1ec0",
+      "animal_tag": "TAG-PUN-2026-BAVF7",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_e83847021354.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.9988,
+          "risk_level": "LOW",
+          "risk_score": 0.1,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.0012,
+            "Healthy": 0.9988
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 1314.15,
+            "mean_brightness": 193.06,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 41.32
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 3.641
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.066
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 47.0,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 68.1,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 18.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 13.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 0.1,
+            "weight": 0.4,
+            "weighted_contribution": 0.04,
+            "percentage_of_total_risk": 0.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (0.1/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 0.1,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 47.0,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:53.854307+00:00",
+      "created_at": "2026-09-08T14:33:53.854307+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "57643ef1-a593-4b89-9709-6fdadb8d4fc2",
+      "id": "57643ef1-a593-4b89-9709-6fdadb8d4fc2",
+      "animal_id": "19fef558-db6d-4376-9b59-8e14871bc6ec",
+      "animal_tag": "TAG-PUN-2026-59UXB",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_96b35dbf339c.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #1",
+      "exact_latitude": 18.579,
+      "exact_longitude": 73.9825,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 39.41
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.7958999872207642
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.08420000225305557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.07039999961853027
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.04089999943971634
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 79.6,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.8,
+            "Lumpy Skin Disease": 79.6,
+            "Foot-and-Mouth Disease": 4.1,
+            "Mastitis": 8.4,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 7.0
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 3.462
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 7.301
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 51.6,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 79.6,
+            "weight": 0.35,
+            "weighted_contribution": 27.86,
+            "percentage_of_total_risk": 54.0,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (79.6/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 17.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 17.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.8,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 79.6,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 51.6,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:55.229368+00:00",
+      "created_at": "2026-09-08T14:33:55.229368+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "c3ac0597-c3e7-43ed-a784-27b7dc8001d0",
+      "id": "c3ac0597-c3e7-43ed-a784-27b7dc8001d0",
+      "animal_id": "50b291d5-225f-49c5-8526-b46bc6e9a9e2",
+      "animal_tag": "TAG-PUN-2026-5YPUF",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_480ba7fea3f4.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #2",
+      "exact_latitude": 18.58,
+      "exact_longitude": 73.983,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 35.33
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.7958999872207642
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.08420000225305557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.07039999961853027
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.04089999943971634
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 79.6,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.8,
+            "Lumpy Skin Disease": 79.6,
+            "Foot-and-Mouth Disease": 4.1,
+            "Mastitis": 8.4,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 7.0
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 1.909
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.066
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 51.6,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 79.6,
+            "weight": 0.35,
+            "weighted_contribution": 27.86,
+            "percentage_of_total_risk": 54.0,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (79.6/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 17.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 17.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.8,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 79.6,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 51.6,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:55.712399+00:00",
+      "created_at": "2026-09-08T14:33:55.712399+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "ec80a8e7-0250-47cc-822b-c8e20c6bf473",
+      "id": "ec80a8e7-0250-47cc-822b-c8e20c6bf473",
+      "animal_id": "f4f2de5e-e7fa-4493-a345-de852bbb96db",
+      "animal_tag": "TAG-PUN-2026-L2C0S",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_cfb41986cbf7.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #3",
+      "exact_latitude": 18.5775,
+      "exact_longitude": 73.981,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 41.13
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.8438000082969666
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.06610000133514404
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.05180000141263008
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.03099999949336052
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 84.4,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.7,
+            "Lumpy Skin Disease": 84.4,
+            "Foot-and-Mouth Disease": 3.1,
+            "Mastitis": 6.6,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 5.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 4.386
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.587
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 53.3,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 84.4,
+            "weight": 0.35,
+            "weighted_contribution": 29.54,
+            "percentage_of_total_risk": 55.4,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (84.4/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 16.5,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 16.5,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.4,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 84.4,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 53.3,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:56.185797+00:00",
+      "created_at": "2026-09-08T14:33:56.185797+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "animal_tag": "TAG-PUN-2026-MNTT4",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production",
+        "swelling"
+      ],
+      "image_url": null,
+      "body_temperature_c": 41.2,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.0,
+      "activity_score": 0.0,
+      "clinical_notes": "Severe LSD-like nodules; forced high-risk escalation test",
+      "exact_latitude": 18.5789,
+      "exact_longitude": 73.9828,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": null,
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.6182000041007996
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.30660000443458557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.04619999974966049
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.02810000069439411
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "MODERATE",
+          "risk_score": 61.8,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 61.8,
+            "Foot-and-Mouth Disease": 2.8,
+            "Mastitis": 30.7,
+            "Bovine Respiratory Disease": 0.0,
+            "Brucellosis": 4.6
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 4.042
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.064
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 60.9,
+        "risk_level": "High",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 61.8,
+            "weight": 0.5833,
+            "weighted_contribution": 36.05,
+            "percentage_of_total_risk": 59.2,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (61.8/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.25,
+            "weighted_contribution": 14.7,
+            "percentage_of_total_risk": 24.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1667,
+            "weighted_contribution": 10.17,
+            "percentage_of_total_risk": 16.7,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": null,
+          "symptom_risk": 61.8,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "symptoms": 0.5833,
+            "environment": 0.25,
+            "context": 0.1667
+          },
+          "active_modalities_count": 3,
+          "is_dynamically_renormalized": true,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 60.9,
+      "risk_level": "High",
+      "is_surveillance_triggered": true,
+      "surveillance_report_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "animal_health_status": "SUSPECTED",
+      "recorded_at": "2026-09-08T14:35:05.066093+00:00",
+      "created_at": "2026-09-08T14:35:05.066093+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "f0194b62-8ba5-4bc8-bf1a-3da436e91a9f",
+      "id": "f0194b62-8ba5-4bc8-bf1a-3da436e91a9f",
+      "animal_id": "927bb9de-f2d2-4e74-a172-91b6f5d063d1",
+      "animal_tag": "TAG-PUN-2026-88J4X",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_1eb52770dcc6.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 91.93
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 19.999
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 4.706
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 55.7,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 57.5,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 15.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 15.8,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 55.7,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T15:17:26.311472+00:00",
+      "created_at": "2026-09-08T15:17:26.311472+00:00",
       "is_veterinary_diagnosis": false,
       "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
     }
@@ -5055,12 +7332,1631 @@
       "created_at": "2026-09-08T13:18:19.436338+00:00",
       "is_veterinary_diagnosis": false,
       "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "ad2c9718-8a78-4899-bfa0-61779d83b20e",
+      "id": "ad2c9718-8a78-4899-bfa0-61779d83b20e",
+      "animal_id": "cfde80d8-d485-44c6-8965-54346e3738f0",
+      "animal_tag": "TAG-PUN-2026-W1MYV",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_994077c825e1.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 228.4
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 12.737
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 7.69
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 55.7,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 57.5,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 15.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 15.8,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 55.7,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:29:51.920632+00:00",
+      "created_at": "2026-09-08T14:29:51.920632+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "0b539a5d-b792-4140-b629-47db50f08387",
+      "id": "0b539a5d-b792-4140-b629-47db50f08387",
+      "animal_id": "88b974af-2b82-4c9f-9bb2-3bb6988c1ec0",
+      "animal_tag": "TAG-PUN-2026-BAVF7",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_e83847021354.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.9988,
+          "risk_level": "LOW",
+          "risk_score": 0.1,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.0012,
+            "Healthy": 0.9988
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 1314.15,
+            "mean_brightness": 193.06,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 41.32
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 3.641
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.066
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 47.0,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 68.1,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 18.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 13.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 0.1,
+            "weight": 0.4,
+            "weighted_contribution": 0.04,
+            "percentage_of_total_risk": 0.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (0.1/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 0.1,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 47.0,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:53.854307+00:00",
+      "created_at": "2026-09-08T14:33:53.854307+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "57643ef1-a593-4b89-9709-6fdadb8d4fc2",
+      "id": "57643ef1-a593-4b89-9709-6fdadb8d4fc2",
+      "animal_id": "19fef558-db6d-4376-9b59-8e14871bc6ec",
+      "animal_tag": "TAG-PUN-2026-59UXB",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_96b35dbf339c.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #1",
+      "exact_latitude": 18.579,
+      "exact_longitude": 73.9825,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 39.41
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.7958999872207642
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.08420000225305557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.07039999961853027
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.04089999943971634
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 79.6,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.8,
+            "Lumpy Skin Disease": 79.6,
+            "Foot-and-Mouth Disease": 4.1,
+            "Mastitis": 8.4,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 7.0
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 3.462
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 7.301
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 51.6,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 79.6,
+            "weight": 0.35,
+            "weighted_contribution": 27.86,
+            "percentage_of_total_risk": 54.0,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (79.6/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 17.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 17.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.8,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 79.6,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 51.6,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:55.229368+00:00",
+      "created_at": "2026-09-08T14:33:55.229368+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "c3ac0597-c3e7-43ed-a784-27b7dc8001d0",
+      "id": "c3ac0597-c3e7-43ed-a784-27b7dc8001d0",
+      "animal_id": "50b291d5-225f-49c5-8526-b46bc6e9a9e2",
+      "animal_tag": "TAG-PUN-2026-5YPUF",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_480ba7fea3f4.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #2",
+      "exact_latitude": 18.58,
+      "exact_longitude": 73.983,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 35.33
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.7958999872207642
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.08420000225305557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.07039999961853027
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.04089999943971634
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 79.6,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.8,
+            "Lumpy Skin Disease": 79.6,
+            "Foot-and-Mouth Disease": 4.1,
+            "Mastitis": 8.4,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 7.0
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 1.909
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.066
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 51.6,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 79.6,
+            "weight": 0.35,
+            "weighted_contribution": 27.86,
+            "percentage_of_total_risk": 54.0,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (79.6/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 17.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 17.1,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.8,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 79.6,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 51.6,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:55.712399+00:00",
+      "created_at": "2026-09-08T14:33:55.712399+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "ec80a8e7-0250-47cc-822b-c8e20c6bf473",
+      "id": "ec80a8e7-0250-47cc-822b-c8e20c6bf473",
+      "animal_id": "f4f2de5e-e7fa-4493-a345-de852bbb96db",
+      "animal_tag": "TAG-PUN-2026-L2C0S",
+      "species": "Cattle",
+      "breed": "Sahiwal",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "swelling"
+      ],
+      "image_url": "/uploads/health_cfb41986cbf7.jpg",
+      "body_temperature_c": 41.0,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.5,
+      "activity_score": 0.1,
+      "clinical_notes": "Simulated cluster seed report #3",
+      "exact_latitude": 18.5775,
+      "exact_longitude": 73.981,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 41.13
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.8438000082969666
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.06610000133514404
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.05180000141263008
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.03099999949336052
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 84.4,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.7,
+            "Lumpy Skin Disease": 84.4,
+            "Foot-and-Mouth Disease": 3.1,
+            "Mastitis": 6.6,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 5.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 4.386
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.587
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 53.3,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 84.4,
+            "weight": 0.35,
+            "weighted_contribution": 29.54,
+            "percentage_of_total_risk": 55.4,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (84.4/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 16.5,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 16.5,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.4,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 84.4,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 53.3,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T14:33:56.185797+00:00",
+      "created_at": "2026-09-08T14:33:56.185797+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "id": "a810cf10-b5a4-4dff-8ccf-4bfcd5846af9",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "animal_tag": "TAG-PUN-2026-MNTT4",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production",
+        "swelling"
+      ],
+      "image_url": null,
+      "body_temperature_c": 41.2,
+      "appetite_score": 0.0,
+      "milk_yield_liters": 1.0,
+      "activity_score": 0.0,
+      "clinical_notes": "Severe LSD-like nodules; forced high-risk escalation test",
+      "exact_latitude": 18.5789,
+      "exact_longitude": 73.9828,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": null,
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.6182000041007996
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.30660000443458557
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.04619999974966049
+            },
+            {
+              "disease": "Foot-and-Mouth Disease",
+              "probability": 0.02810000069439411
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "MODERATE",
+          "risk_score": 61.8,
+          "severity": "MODERATE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Swelling",
+              "contribution": 0.1156
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 61.8,
+            "Foot-and-Mouth Disease": 2.8,
+            "Mastitis": 30.7,
+            "Bovine Respiratory Disease": 0.0,
+            "Brucellosis": 4.6
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 4.042
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 3.064
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 60.9,
+        "risk_level": "High",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 61.8,
+            "weight": 0.5833,
+            "weighted_contribution": 36.05,
+            "percentage_of_total_risk": 59.2,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (61.8/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.25,
+            "weighted_contribution": 14.7,
+            "percentage_of_total_risk": 24.1,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1667,
+            "weighted_contribution": 10.17,
+            "percentage_of_total_risk": 16.7,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": null,
+          "symptom_risk": 61.8,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "symptoms": 0.5833,
+            "environment": 0.25,
+            "context": 0.1667
+          },
+          "active_modalities_count": 3,
+          "is_dynamically_renormalized": true,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 60.9,
+      "risk_level": "High",
+      "is_surveillance_triggered": true,
+      "surveillance_report_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "animal_health_status": "SUSPECTED",
+      "recorded_at": "2026-09-08T14:35:05.066093+00:00",
+      "created_at": "2026-09-08T14:35:05.066093+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
+    },
+    {
+      "_id": "f0194b62-8ba5-4bc8-bf1a-3da436e91a9f",
+      "id": "f0194b62-8ba5-4bc8-bf1a-3da436e91a9f",
+      "animal_id": "927bb9de-f2d2-4e74-a172-91b6f5d063d1",
+      "animal_tag": "TAG-PUN-2026-88J4X",
+      "species": "Cattle",
+      "breed": "Gir",
+      "owner_id": "farmer_ramesh",
+      "owner_name": "Ramesh Patil",
+      "recorded_by": "farmer_ramesh",
+      "recorded_by_role": "FARMER",
+      "symptoms": [
+        "skin_abnormalities",
+        "fever",
+        "loss_of_appetite",
+        "reduced_milk_production"
+      ],
+      "image_url": "/uploads/health_1eb52770dcc6.jpg",
+      "body_temperature_c": 40.8,
+      "appetite_score": 0.1,
+      "milk_yield_liters": 2.0,
+      "activity_score": 0.2,
+      "clinical_notes": "Multiple circumscribed lumps on neck and udder with high pyrexia.",
+      "exact_latitude": 18.5784,
+      "exact_longitude": 73.9821,
+      "approximate_latitude": 18.58,
+      "approximate_longitude": 73.98,
+      "village": "Wagholi",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "share_location": true,
+      "ai_analyses": {
+        "image": {
+          "service": "image_risk_analysis",
+          "predicted_class": "Healthy",
+          "confidence": 0.7798,
+          "risk_level": "LOW",
+          "risk_score": 22.0,
+          "probabilities": {
+            "Possible Lumpy Skin Disease": 0.2202,
+            "Healthy": 0.7798
+          },
+          "risk_thresholds": {
+            "low_threshold": 0.3,
+            "high_threshold": 0.7
+          },
+          "image_quality": {
+            "quality_check_passed": true,
+            "blur_laplacian_variance": 10994.85,
+            "mean_brightness": 142.88,
+            "quality_warnings": []
+          },
+          "model_metadata": {
+            "architecture": "MobileNetV3-Small",
+            "checkpoint": "ml/models/best_lsd_model.pt",
+            "framework": "PyTorch",
+            "device": "cpu",
+            "inference_latency_ms": 91.93
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and visual risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for confirmatory laboratory testing (e.g. PCR/ELISA)."
+        },
+        "symptoms": {
+          "service": "symptom_based_disease_risk_assessment",
+          "possible_conditions": [
+            {
+              "disease": "Lumpy Skin Disease",
+              "probability": 0.9146999716758728
+            },
+            {
+              "disease": "Mastitis",
+              "probability": 0.04729999974370003
+            },
+            {
+              "disease": "Brucellosis",
+              "probability": 0.032099999487400055
+            }
+          ],
+          "top_condition": "Lumpy Skin Disease",
+          "risk_level": "HIGH",
+          "risk_score": 91.5,
+          "severity": "SEVERE",
+          "contributing_symptoms": [
+            {
+              "symptom": "Skin Abnormalities",
+              "contribution": 0.2111
+            },
+            {
+              "symptom": "Reduced Milk Production",
+              "contribution": 0.1224
+            },
+            {
+              "symptom": "Fever",
+              "contribution": 0.0695
+            },
+            {
+              "symptom": "Loss Of Appetite",
+              "contribution": 0.0405
+            }
+          ],
+          "probabilities": {
+            "Healthy": 0.0,
+            "Lumpy Skin Disease": 91.5,
+            "Foot-and-Mouth Disease": 0.5,
+            "Mastitis": 4.7,
+            "Bovine Respiratory Disease": 0.1,
+            "Brucellosis": 3.2
+          },
+          "risk_thresholds": {
+            "low_threshold": 35.0,
+            "high_threshold": 65.0
+          },
+          "model_metadata": {
+            "architecture": "XGBoost Multi-Class Classifier",
+            "checkpoint": "ml/models/symptom_model.pkl",
+            "framework": "XGBoost + SHAP TreeExplainer",
+            "inference_latency_ms": 19.999
+          },
+          "is_veterinary_diagnosis": false,
+          "disclaimer": "AI screening and risk triage tool only. Not a veterinary diagnosis. Consult a registered veterinarian for clinical confirmation and prescription."
+        },
+        "environment": {
+          "service": "environmental_risk_assessment",
+          "environmental_risk_score": 58.8,
+          "risk_level": "Medium",
+          "outbreak_probability": 0.06650000065565109,
+          "location": {
+            "latitude": 18.58,
+            "longitude": 73.98
+          },
+          "environmental_factors": {
+            "temperature_c": 28.0,
+            "humidity_percent": 65.0,
+            "rainfall_mm": 20.0,
+            "elevation_m": 180.0,
+            "cattle_density_km2": 15000.0,
+            "buffalo_density_km2": 3000.0
+          },
+          "key_risk_drivers": [
+            "Elevated precipitation (20.0 mm) facilitates stagnant water pooling for biting vectors",
+            "Mean temperature (28.0\u00b0C) resides in peak biting fly viral incubation range",
+            "Absence of frost days permits uninterrupted overwintering of vector colonies"
+          ],
+          "model_metadata": {
+            "architecture": "XGBoost Geospatial Classifier",
+            "checkpoint": "ml/models/environmental_risk_model.pkl",
+            "framework": "XGBoost",
+            "inference_latency_ms": 4.706
+          },
+          "is_animal_diagnosis": false,
+          "disclaimer": "This score estimates regional environmental and vector-breeding disease risk for an area. It does not diagnose an individual animal."
+        }
+      },
+      "multi_modal_risk": {
+        "final_risk_score": 55.7,
+        "risk_level": "Medium",
+        "contributing_factors": [
+          {
+            "factor": "Symptom AI Risk",
+            "modality_key": "symptoms",
+            "raw_score": 91.5,
+            "weight": 0.35,
+            "weighted_contribution": 32.02,
+            "percentage_of_total_risk": 57.5,
+            "description": "Reported acute clinical symptoms strongly match infectious disease profiles (91.5/100)."
+          },
+          {
+            "factor": "Environmental Risk",
+            "modality_key": "environment",
+            "raw_score": 58.8,
+            "weight": 0.15,
+            "weighted_contribution": 8.82,
+            "percentage_of_total_risk": 15.8,
+            "description": "Moderate ambient humidity/temperature favorable for vector survival (58.8/100)."
+          },
+          {
+            "factor": "Image AI Risk",
+            "modality_key": "image",
+            "raw_score": 22.0,
+            "weight": 0.4,
+            "weighted_contribution": 8.8,
+            "percentage_of_total_risk": 15.8,
+            "description": "Visual screening indicates clear skin with no distinctive epidemic lesions (22.0/100)."
+          },
+          {
+            "factor": "Health/Vaccination Context",
+            "modality_key": "context",
+            "raw_score": 61.0,
+            "weight": 0.1,
+            "weighted_contribution": 6.1,
+            "percentage_of_total_risk": 11.0,
+            "description": "Animal is completely unvaccinated; high biological susceptibility to viral/bacterial contagion. Clean clinical record with no reported prior chronic or epidemic illness. (Context score: 61.0/100)."
+          }
+        ],
+        "individual_model_scores": {
+          "image_risk": 22.0,
+          "symptom_risk": 91.5,
+          "environmental_risk": 58.8,
+          "context_risk": 61.0
+        },
+        "risk_thresholds": {
+          "Low": "0-30",
+          "Medium": "31-60",
+          "High": "61-80",
+          "Critical": "81-100"
+        },
+        "calculation_details": {
+          "configured_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "effective_weights": {
+            "image": 0.4,
+            "symptoms": 0.35,
+            "environment": 0.15,
+            "context": 0.1
+          },
+          "active_modalities_count": 4,
+          "is_dynamically_renormalized": false,
+          "formula": "final_risk_score = sum(raw_score_i * effective_weight_i)"
+        },
+        "is_veterinary_diagnosis": false,
+        "disclaimer": "This score is an AI-assisted multi-modal risk assessment tool and NOT a veterinary diagnosis. It synthesizes visual computer vision triage, reported symptoms, geospatial vector risk, and immunization history to provide early warning triage for farmers and veterinarians. Clinical decisions, prescriptions, and statutory quarantine actions must be confirmed by a licensed veterinarian."
+      },
+      "final_risk_score": 55.7,
+      "risk_level": "Medium",
+      "is_surveillance_triggered": false,
+      "surveillance_report_id": null,
+      "animal_health_status": "HEALTHY",
+      "recorded_at": "2026-09-08T15:17:26.311472+00:00",
+      "created_at": "2026-09-08T15:17:26.311472+00:00",
+      "is_veterinary_diagnosis": false,
+      "disclaimer": "AI-assisted risk report only. Not a veterinary diagnosis. Confirmatory testing and prescription must be performed by a registered veterinarian."
     }
   ],
   "disease_clusters": [
     {
-      "id": "cluster_96f0d6a0b30e",
-      "cluster_id": "cluster_96f0d6a0b30e",
+      "id": "cluster_46763db30d6b",
+      "cluster_id": "cluster_46763db30d6b",
       "cluster_label": "Potential Disease Cluster",
       "pattern_type": "Emerging Risk Pattern",
       "disease": "Lumpy Skin Disease (LSD)",
@@ -5088,10 +8984,10 @@
         "d308ba9d-a48a-4e63-b705-af0010ed7dc5"
       ],
       "affected_animal_ids": [
-        "TAG-MH-2026-SIM07",
-        "TAG-MH-2026-SIM06",
         "TAG-MH-2026-SIM01",
-        "TAG-MH-2026-SIM05"
+        "TAG-MH-2026-SIM07",
+        "TAG-MH-2026-SIM05",
+        "TAG-MH-2026-SIM06"
       ],
       "center_location": {
         "latitude": 18.58035,
@@ -5105,7 +9001,7 @@
       "radius": 0.5,
       "eps_threshold_km": 5.0,
       "min_reports_threshold": 3,
-      "time_window_days": 7,
+      "time_window_days": 14,
       "temporal_span_days": 1,
       "earliest_report_at": "2026-09-07T23:17:20.784315",
       "latest_report_at": "2026-09-08T07:17:20.784315",
@@ -5123,14 +9019,14 @@
       "is_confirmed_outbreak": false,
       "is_veterinary_diagnosis": false,
       "disclaimer": "This is an AI-assisted spatio-temporal cluster detection (Emerging Risk Pattern) derived from density clustering of high-risk reports. It does NOT constitute a confirmed epidemiological outbreak or official veterinary diagnosis. Field verification by a certified veterinary authority is required.",
-      "detected_at": "2026-09-08T13:17:22.823855+00:00",
-      "created_at": "2026-09-08T13:17:22.823875+00:00",
-      "updated_at": "2026-09-08T13:17:22.832158+00:00",
-      "_id": "e44c5fb3-3b1e-4a6f-ae50-fb31af5ef72e"
+      "detected_at": "2026-09-08T14:33:57.006966+00:00",
+      "created_at": "2026-09-08T14:33:57.006985+00:00",
+      "updated_at": "2026-09-08T14:33:57.017455+00:00",
+      "_id": "db1fc840-14eb-4654-a73a-b96b6ed10165"
     },
     {
-      "id": "cluster_1a58329b8844",
-      "cluster_id": "cluster_1a58329b8844",
+      "id": "cluster_5f5fd8f2a6f3",
+      "cluster_id": "cluster_5f5fd8f2a6f3",
       "cluster_label": "Potential Disease Cluster",
       "pattern_type": "Emerging Risk Pattern",
       "disease": "Suspected Disease",
@@ -5158,10 +9054,10 @@
         "c7ede7b6-1712-4b10-bdb3-2e9b9508cccc"
       ],
       "affected_animal_ids": [
-        "TAG-MH-2026-SIM07",
-        "TAG-MH-2026-SIM06",
         "TAG-MH-2026-SIM01",
-        "TAG-MH-2026-SIM05"
+        "TAG-MH-2026-SIM07",
+        "TAG-MH-2026-SIM05",
+        "TAG-MH-2026-SIM06"
       ],
       "center_location": {
         "latitude": 18.58035,
@@ -5175,7 +9071,7 @@
       "radius": 0.5,
       "eps_threshold_km": 5.0,
       "min_reports_threshold": 3,
-      "time_window_days": 7,
+      "time_window_days": 14,
       "temporal_span_days": 1,
       "earliest_report_at": "2026-09-07T23:17:20.784315",
       "latest_report_at": "2026-09-08T07:17:20.784315",
@@ -5193,10 +9089,22 @@
       "is_confirmed_outbreak": false,
       "is_veterinary_diagnosis": false,
       "disclaimer": "This is an AI-assisted spatio-temporal cluster detection (Emerging Risk Pattern) derived from density clustering of high-risk reports. It does NOT constitute a confirmed epidemiological outbreak or official veterinary diagnosis. Field verification by a certified veterinary authority is required.",
-      "detected_at": "2026-09-08T13:17:22.832091+00:00",
-      "created_at": "2026-09-08T13:17:22.832110+00:00",
-      "updated_at": "2026-09-08T13:17:22.832158+00:00",
-      "_id": "25b2a545-c6af-4605-a794-eeed3555acba"
+      "detected_at": "2026-09-08T14:33:57.017396+00:00",
+      "created_at": "2026-09-08T14:33:57.017416+00:00",
+      "updated_at": "2026-09-08T14:33:57.017455+00:00",
+      "_id": "9acc2254-9d27-49d5-87a8-047f739efdeb"
+    }
+  ],
+  "treatments": [
+    {
+      "case_id": "689e77fc-42f8-492b-acb8-c77503ef8d8c",
+      "animal_id": "effe4d47-6425-470d-826a-992b4a9f1570",
+      "diagnosis": "Confirmed Lumpy Skin Disease (Nodular Cutaneous Form)",
+      "treatment_plan": "Isolation + NSAID + fly control",
+      "follow_up": "Recheck in 5 days",
+      "prescribed_by": "dr_anita",
+      "created_at": "2026-09-08T14:35:56.245783",
+      "_id": "61b62ece-146e-4db3-8c07-a7b31791201d"
     }
   ]
 }
