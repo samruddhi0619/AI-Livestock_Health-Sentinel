@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Livestock Health Sentinel</title>
+    <script>
+      window.addEventListener('error', function(event) {
+        setTimeout(function() {
+          var errorDiv = document.createElement('div');
+          errorDiv.style.position = 'fixed';
+          errorDiv.style.top = '0';
+          errorDiv.style.left = '0';
+          errorDiv.style.width = '100%';
+          errorDiv.style.height = '100%';
+          errorDiv.style.backgroundColor = '#ffffff';
+          errorDiv.style.color = '#dc2626';
+          errorDiv.style.padding = '40px';
+          errorDiv.style.zIndex = '999999';
+          errorDiv.style.fontFamily = 'monospace';
+          errorDiv.style.overflow = 'auto';
+          errorDiv.style.lineHeight = '1.5';
+          
+          errorDiv.innerHTML = '<h1 style="font-size: 24px; margin-bottom: 20px;">⚠️ Frontend Runtime Error Detected</h1>' +
+            '<p style="font-size: 16px; margin-bottom: 10px;"><strong>Message:</strong> ' + event.message + '</p>' +
+            '<p style="font-size: 14px; margin-bottom: 10px;"><strong>Source:</strong> ' + event.filename + ':' + event.lineno + ':' + event.colno + '</p>' +
+            '<pre style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 13px; color: #334155;">' + 
+            (event.error ? event.error.stack : 'No stack trace available') + 
+            '</pre>';
+            
+          document.body.appendChild(errorDiv);
+        }, 100);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
