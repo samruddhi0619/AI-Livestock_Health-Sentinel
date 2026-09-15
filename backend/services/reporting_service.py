@@ -242,8 +242,9 @@ class HealthReportingService:
             top_condition = image_result["predicted_class"]
 
         # 7. Determine Automated Disease Surveillance Escalation
-        # High-risk (61-80) or Critical (81-100) automatically triggers surveillance case
-        is_high_risk = risk_level in ["High", "Critical"] or final_risk_score >= 61.0
+        # High-risk (61-80), Critical (81-100), or Severe Symptoms (>=75) automatically triggers surveillance case
+        s_score = symptom_score if symptom_score is not None else 0.0
+        is_high_risk = risk_level in ["High", "Critical"] or final_risk_score >= 60.0 or s_score >= 75.0
         surveillance_case_id = None
         
         report_id = str(uuid.uuid4())

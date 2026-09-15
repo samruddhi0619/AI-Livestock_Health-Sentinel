@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { reportsApi } from '../../api/client';
 import { 
   ArrowLeft, 
@@ -27,6 +28,7 @@ const AssessmentResult = () => {
   const { report_id } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const [assessment, setAssessment] = useState(location.state?.assessment || location.state?.report || null);
   const [loading, setLoading] = useState(!assessment);
@@ -54,7 +56,7 @@ const AssessmentResult = () => {
     return (
       <div className="p-8 text-center max-w-4xl mx-auto">
         <div className="w-12 h-12 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-        <p className="text-slate-600 font-medium">Computing Multi-Modal Risk Analysis...</p>
+        <p className="text-slate-600 font-medium">{t('syncing')}</p>
       </div>
     );
   }
@@ -86,7 +88,7 @@ const AssessmentResult = () => {
           lightBg: 'bg-red-50',
           border: 'border-red-200',
           text: 'text-red-900',
-          desc: 'Urgent veterinary intervention and farm biosecurity containment required.'
+          desc: t('critical_desc')
         };
       case 'HIGH':
         return {
@@ -94,7 +96,7 @@ const AssessmentResult = () => {
           lightBg: 'bg-orange-50',
           border: 'border-orange-200',
           text: 'text-orange-900',
-          desc: 'High probability of infectious disease. Immediate isolation recommended.'
+          desc: t('high_desc')
         };
       case 'MEDIUM':
         return {
@@ -102,7 +104,7 @@ const AssessmentResult = () => {
           lightBg: 'bg-amber-50',
           border: 'border-amber-200',
           text: 'text-amber-900',
-          desc: 'Moderate health deviation observed. Maintain close clinical observation.'
+          desc: t('medium_desc')
         };
       default:
         return {
@@ -110,7 +112,7 @@ const AssessmentResult = () => {
           lightBg: 'bg-emerald-50',
           border: 'border-emerald-200',
           text: 'text-emerald-900',
-          desc: 'Low disease risk. Normal routine herd management advised.'
+          desc: t('low_desc')
         };
     }
   };
@@ -118,7 +120,7 @@ const AssessmentResult = () => {
   const theme = getRiskColorTheme(riskLevel);
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto space-y-6 font-['Outfit',sans-serif]">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -130,13 +132,13 @@ const AssessmentResult = () => {
           </button>
           <div>
             <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-              <span>AI Multi-Modal Assessment Result</span>
+              <span>{t('assessment_result_title')}</span>
               <Badge variant="outline" className="text-xs font-mono">
                 {animalId}
               </Badge>
             </h1>
             <p className="text-xs text-slate-500 mt-0.5">
-              Transparent, multi-factor risk computation based on independent analytical models
+              {t('submodel_desc')}
             </p>
           </div>
         </div>
@@ -149,7 +151,7 @@ const AssessmentResult = () => {
             className="text-xs gap-1.5"
           >
             <Printer size={14} />
-            <span>Print Report</span>
+            <span>{t('print_report')}</span>
           </Button>
 
           <Button
@@ -159,7 +161,7 @@ const AssessmentResult = () => {
             className="text-xs gap-1.5"
           >
             <QrCode size={14} />
-            <span>View Passport</span>
+            <span>{t('view_passport')}</span>
           </Button>
         </div>
       </div>
@@ -169,7 +171,7 @@ const AssessmentResult = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-200/80 pb-6">
           <div className="space-y-1">
             <span className="text-xs font-bold uppercase tracking-widest text-slate-500">
-              Aggregated Multi-Modal Risk Score
+              {t('aggregated_risk_score')}
             </span>
             <div className="flex items-baseline gap-3">
               <span className="text-5xl sm:text-6xl font-black text-slate-900 tracking-tight">
@@ -185,7 +187,7 @@ const AssessmentResult = () => {
           <div className="shrink-0 flex flex-col items-start sm:items-end gap-2">
             <RiskBadge level={riskLevel} score={finalRisk} className="text-sm px-4 py-1.5" />
             <span className="text-xs text-slate-500 font-medium">
-              Evaluated on {new Date().toLocaleDateString()}
+              {new Date().toLocaleDateString()}
             </span>
           </div>
         </div>
@@ -193,10 +195,10 @@ const AssessmentResult = () => {
         {/* 4-Tier Risk Scale Bar */}
         <div className="space-y-2">
           <div className="flex justify-between text-[11px] font-bold text-slate-600">
-            <span className="text-emerald-700">Low (0-30)</span>
-            <span className="text-amber-700">Medium (31-60)</span>
-            <span className="text-orange-700">High (61-80)</span>
-            <span className="text-red-700">Critical (81-100)</span>
+            <span className="text-emerald-700">{t('low_risk')} (0-30)</span>
+            <span className="text-amber-700">{t('medium_risk')} (31-60)</span>
+            <span className="text-orange-700">{t('high_risk')} (61-80)</span>
+            <span className="text-red-700">{t('critical_risk')} (81-100)</span>
           </div>
           <div className="w-full h-3 rounded-full bg-slate-200 overflow-hidden flex">
             <div className="w-[30%] bg-emerald-500 h-full" />
@@ -206,7 +208,7 @@ const AssessmentResult = () => {
           </div>
           <div className="text-right">
             <span className="text-[11px] font-semibold text-slate-600">
-              Indicator Marker: <strong className="text-slate-900">{finalRisk}%</strong>
+              {t('indicator_marker')}: <strong className="text-slate-900">{finalRisk}%</strong>
             </span>
           </div>
         </div>
@@ -217,10 +219,10 @@ const AssessmentResult = () => {
         <CardHeader className="border-b border-slate-100 pb-4">
           <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
             <Activity size={18} className="text-emerald-700" />
-            <span>Independent Sub-Model Score Breakdown</span>
+            <span>{t('submodel_breakdown')}</span>
           </CardTitle>
           <CardDescription>
-            Configurable weights ensuring no single model dictates the final assessment in isolation
+            {t('submodel_desc')}
           </CardDescription>
         </CardHeader>
 
@@ -231,9 +233,9 @@ const AssessmentResult = () => {
               <div className="flex items-center justify-between text-xs">
                 <span className="font-bold text-slate-700 flex items-center gap-1.5">
                   <Camera size={14} className="text-blue-600" />
-                  Image AI
+                  {t('image_ai')}
                 </span>
-                <Badge variant="outline" className="text-[10px] font-bold">40% Weight</Badge>
+                <Badge variant="outline" className="text-[10px] font-bold">40% {t('weight_suffix')}</Badge>
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
@@ -241,9 +243,6 @@ const AssessmentResult = () => {
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
-              <p className="text-[11px] text-slate-500">
-                Oral & mucosal lesion morphology analysis
-              </p>
             </div>
 
             {/* 2. Symptom AI */}
@@ -251,9 +250,9 @@ const AssessmentResult = () => {
               <div className="flex items-center justify-between text-xs">
                 <span className="font-bold text-slate-700 flex items-center gap-1.5">
                   <Thermometer size={14} className="text-rose-600" />
-                  Symptom AI
+                  {t('symptom_ai')}
                 </span>
-                <Badge variant="outline" className="text-[10px] font-bold">35% Weight</Badge>
+                <Badge variant="outline" className="text-[10px] font-bold">35% {t('weight_suffix')}</Badge>
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
@@ -261,9 +260,6 @@ const AssessmentResult = () => {
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
-              <p className="text-[11px] text-slate-500">
-                Fever, salivation, lameness risk pattern
-              </p>
             </div>
 
             {/* 3. Environmental */}
@@ -271,9 +267,9 @@ const AssessmentResult = () => {
               <div className="flex items-center justify-between text-xs">
                 <span className="font-bold text-slate-700 flex items-center gap-1.5">
                   <CloudSun size={14} className="text-amber-600" />
-                  Environment
+                  {t('environment')}
                 </span>
-                <Badge variant="outline" className="text-[10px] font-bold">15% Weight</Badge>
+                <Badge variant="outline" className="text-[10px] font-bold">15% {t('weight_suffix')}</Badge>
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
@@ -281,9 +277,6 @@ const AssessmentResult = () => {
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
-              <p className="text-[11px] text-slate-500">
-                Regional climate & vector exposure index
-              </p>
             </div>
 
             {/* 4. Health & Vaccination */}
@@ -291,9 +284,9 @@ const AssessmentResult = () => {
               <div className="flex items-center justify-between text-xs">
                 <span className="font-bold text-slate-700 flex items-center gap-1.5">
                   <Syringe size={14} className="text-emerald-600" />
-                  Context
+                  {t('context')}
                 </span>
-                <Badge variant="outline" className="text-[10px] font-bold">10% Weight</Badge>
+                <Badge variant="outline" className="text-[10px] font-bold">10% {t('weight_suffix')}</Badge>
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
@@ -301,16 +294,13 @@ const AssessmentResult = () => {
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
-              <p className="text-[11px] text-slate-500">
-                Immunization validity & prior exposure
-              </p>
             </div>
           </div>
 
           {/* Formula calculation display */}
           <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-1">
             <span className="font-bold text-slate-900 block text-[11px] uppercase tracking-wider">
-              Documented Weighting Calculation:
+              {t('doc_weight_calc')}:
             </span>
             <p className="font-mono text-xs text-emerald-950 bg-white p-2 rounded-lg border border-slate-200">
               Final Risk ({finalRisk}) = (0.40 × {individualScores.image_risk}) + (0.35 × {individualScores.symptom_risk}) + (0.15 × {individualScores.environmental_risk}) + (0.10 × {individualScores.health_vaccination_risk})
@@ -325,7 +315,7 @@ const AssessmentResult = () => {
         <Card className="border-slate-200">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-bold text-slate-900">
-              Key Contributing Risk Factors
+              {t('contributing_factors')}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -345,7 +335,7 @@ const AssessmentResult = () => {
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-bold text-amber-950 flex items-center gap-2">
               <ShieldCheck size={16} className="text-amber-700" />
-              <span>Recommended Next Actions</span>
+              <span>{t('recommended_next_actions')}</span>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-xs text-amber-950">
@@ -378,10 +368,10 @@ const AssessmentResult = () => {
         <Info size={18} className="text-slate-500 shrink-0 mt-0.5" />
         <div>
           <span className="font-bold text-slate-900 block mb-0.5">
-            AI-Assisted Risk Assessment Notice
+            {t('ai_notice_title')}
           </span>
           <p className="leading-relaxed">
-            This report represents an AI-assisted multi-modal risk calculation and is <strong>not a certified veterinary diagnosis</strong>. Do not administer prescription medications without an on-site clinical examination and official prescription by a registered veterinary practitioner.
+            {t('disclaimer')}
           </p>
         </div>
       </div>

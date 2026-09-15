@@ -180,10 +180,10 @@ const RegisterPage = () => {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                <div className="flex flex-col gap-1">
+                  <label className="block text-xs font-semibold text-slate-700">
                     Full Name *
                   </label>
                   <Input
@@ -193,8 +193,8 @@ const RegisterPage = () => {
                     required
                   />
                 </div>
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                <div className="flex flex-col gap-1">
+                  <label className="block text-xs font-semibold text-slate-700">
                     Username *
                   </label>
                   <Input
@@ -207,8 +207,8 @@ const RegisterPage = () => {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                <div className="flex flex-col gap-1">
+                  <label className="block text-xs font-semibold text-slate-700">
                     Password *
                   </label>
                   <Input
@@ -219,8 +219,8 @@ const RegisterPage = () => {
                     required
                   />
                 </div>
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                <div className="flex flex-col gap-1">
+                  <label className="block text-xs font-semibold text-slate-700">
                     Phone Number
                   </label>
                   <Input
@@ -234,7 +234,7 @@ const RegisterPage = () => {
 
               {/* Role-specific sections */}
               {role === 'FARMER' && (
-                <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100 space-y-3">
+                <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100 flex flex-col gap-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-emerald-900 uppercase tracking-wide flex items-center gap-1.5">
                       <MapPin size={14} className="text-emerald-700" />

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
 import { SyncProvider } from './context/SyncContext';
+import { SidebarProvider } from './context/SidebarContext';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
@@ -149,7 +150,9 @@ const App = () => {
       <LanguageProvider>
         <AuthProvider>
           <SyncProvider>
-            <AppRoutes />
+            <SidebarProvider>
+              <AppRoutes />
+            </SidebarProvider>
           </SyncProvider>
         </AuthProvider>
       </LanguageProvider>

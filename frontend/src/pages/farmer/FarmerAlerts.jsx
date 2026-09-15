@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { alertsApi } from '../../api/client';
 import { 
   Bell, 
@@ -12,13 +13,15 @@ import {
   RefreshCw, 
   Sparkles,
   Info,
-  CheckCheck
+  CheckCheck,
+  CheckCircle2
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Badge, RiskBadge } from '../../components/ui/badge';
 
 const FarmerAlerts = () => {
+  const { t } = useLanguage();
   const [alerts, setAlerts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filterType, setFilterType] = useState('ALL');

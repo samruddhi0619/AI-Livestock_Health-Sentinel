@@ -16,7 +16,7 @@ export function Card({ className, ...props }) {
 export function CardHeader({ className, ...props }) {
   return (
     <div
-      className={cn('flex flex-col space-y-1.5 p-6 border-b border-slate-100', className)}
+      className={cn('flex flex-col gap-1.5 p-6 border-b border-slate-100', className)}
       {...props}
     />
   );
@@ -25,7 +25,7 @@ export function CardHeader({ className, ...props }) {
 export function CardTitle({ className, ...props }) {
   return (
     <h3
-      className={cn('text-lg font-semibold leading-none tracking-tight text-slate-900', className)}
+      className={cn('text-lg font-semibold leading-tight tracking-tight text-slate-900', className)}
       {...props}
     />
   );

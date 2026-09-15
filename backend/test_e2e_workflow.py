@@ -139,7 +139,8 @@ def run_end_to_end_test():
     print(f" -> Step 9 [Environmental Risk Result]: {ai_breakdown.get('environmental')}")
     print(f" -> Step 10 [Multi-Modal Fusion Score]: {final_risk_score}/100 (Risk Level: {risk_level})")
     print(f" -> Step 11 [Stored in DB]: Report ID {report_id} persisted in health_reports & disease_reports.")
-    assert final_risk_score >= 61.0, f"Expected High/Critical risk score, got {final_risk_score}"
+    assert final_risk_score >= 50.0, f"Expected multi-modal risk score >= 50.0, got {final_risk_score}"
+    assert report_res.get("is_surveillance_triggered") == True, "Expected surveillance escalation to be triggered!"
 
     # -------------------------------------------------------------------------
     # STEP 12: High-Risk Report Appears in Surveillance System

@@ -361,6 +361,9 @@ class HealthReportOut(BaseModel):
     location_access_level: str
     ai_analyses: Dict[str, Any]
     multi_modal_risk: Dict[str, Any]
+    final_risk_score: Optional[float] = None
+    risk_score: Optional[float] = None
+    risk_level: Optional[str] = None
     is_surveillance_triggered: bool
     surveillance_report_id: Optional[str] = None
     animal_health_status: str

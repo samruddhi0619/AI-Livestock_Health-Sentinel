@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-import { User, Bell, Shield, Stethoscope, Tractor } from 'lucide-react';
+import { useSidebar } from '../context/SidebarContext';
+import { User, Bell, Shield, Stethoscope, Tractor, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const { user, token } = useAuth();
   const { t } = useLanguage();
+  const { isSidebarOpen, toggleSidebar } = useSidebar();
   const [unreadCount, setUnreadCount] = useState(0);
 
   useEffect(() => {
@@ -39,20 +41,20 @@ const Navbar = () => {
       case 'FARMER':
         return (
           <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full">
-            <Tractor size={12} /> Farmer
+            <Tractor size={12} /> {t('farmer')}
           </span>
         );
       case 'VETERINARIAN':
         return (
           <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 bg-blue-100 text-blue-800 rounded-full">
-            <Stethoscope size={12} /> Veterinarian
+            <Stethoscope size={12} /> {t('veterinarian')}
           </span>
         );
       case 'ADMIN':
       case 'OFFICER':
         return (
           <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 bg-amber-100 text-amber-800 rounded-full">
-            <Shield size={12} /> District Officer
+            <Shield size={12} /> {t('admin')}
           </span>
         );
       default:
@@ -61,10 +63,18 @@ const Navbar = () => {
   };
 
   return (
-    <header className="h-16 bg-white border-b border-slate-200 px-4 sm:px-8 flex items-center justify-between shrink-0 shadow-xs">
+    <header className="h-16 bg-white border-b border-slate-200 px-4 sm:px-8 flex items-center justify-between shrink-0 shadow-xs z-30 font-['Outfit',sans-serif]">
       <div className="flex items-center gap-3">
+        <button
+          onClick={toggleSidebar}
+          className="p-2 -ml-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl md:hidden transition-colors cursor-pointer"
+          title="Toggle Navigation Menu"
+          aria-label="Toggle navigation menu"
+        >
+          {isSidebarOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
         <h2 className="text-base sm:text-lg font-bold text-slate-800 tracking-tight">
-          AI-Livestock Health Sentinel
+          {t('app_name')}
         </h2>
         <span className="hidden md:inline-block text-xs text-slate-400 font-medium">|</span>
         <span className="hidden md:inline-block text-xs font-medium text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200/60">

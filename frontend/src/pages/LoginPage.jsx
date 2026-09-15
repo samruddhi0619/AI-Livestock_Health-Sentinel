@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { HeartPulse, Lock, User, AlertCircle, ArrowRight, Tractor, Stethoscope, Shield } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { HeartPulse, Lock, User, AlertCircle, ArrowRight, Tractor, Stethoscope, Shield, Globe } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
@@ -12,6 +13,7 @@ const LoginPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
+  const { language, setLanguage, t } = useLanguage();
   const navigate = useNavigate();
 
   const handleLogin = async (e, customUser = null, customPass = null) => {
@@ -58,29 +60,47 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-linear-to-br from-emerald-50 via-slate-50 to-amber-50/40">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-emerald-50 via-slate-50 to-amber-50/40 font-['Outfit',sans-serif]">
       <div className="w-full max-w-md">
         {/* Branding header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <Link to="/" className="inline-flex items-center gap-2.5 mb-2">
             <div className="w-10 h-10 rounded-xl bg-emerald-700 text-white flex items-center justify-center shadow-md">
               <HeartPulse size={22} />
             </div>
             <span className="text-xl font-black text-slate-900 tracking-tight">
-              Livestock Sentinel
+              {t('app_name')}
             </span>
           </Link>
           <p className="text-xs text-slate-500 font-medium">
-            Sign in to access your livestock health & surveillance portal
+            {t('usp')}
           </p>
+
+          {/* Public Language Switcher Pill */}
+          <div className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-600 mt-3 shadow-2xs">
+            <Globe size={13} className="text-emerald-600" />
+            <button 
+              onClick={() => setLanguage('en')}
+              className={`cursor-pointer transition-colors ${language === 'en' ? 'text-emerald-700 font-bold' : 'hover:text-slate-900'}`}
+            >
+              English
+            </button>
+            <span className="text-slate-300">|</span>
+            <button 
+              onClick={() => setLanguage('mr')}
+              className={`cursor-pointer transition-colors ${language === 'mr' ? 'text-emerald-700 font-bold' : 'hover:text-slate-900'}`}
+            >
+              मराठी
+            </button>
+          </div>
         </div>
 
         <Card className="shadow-xl border-slate-200/80 bg-white">
-          <CardHeader className="pb-4">
-            <CardTitle>Welcome Back</CardTitle>
-            <CardDescription>Enter your credentials to continue</CardDescription>
+          <CardHeader className="pb-4 flex flex-col gap-1">
+            <CardTitle className="text-xl font-bold text-slate-900">{t('welcome_back')}</CardTitle>
+            <CardDescription className="text-xs text-slate-500">{t('enter_credentials')}</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="flex flex-col gap-4 p-6 pt-2">
             {error && (
               <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 flex items-start gap-2">
                 <AlertCircle size={16} className="shrink-0 mt-0.5" />
@@ -88,35 +108,35 @@ const LoginPage = () => {
               </div>
             )}
 
-            <form onSubmit={handleLogin} className="space-y-3.5">
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
-                  Username
+            <form onSubmit={handleLogin} className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1.5">
+                <label className="block text-xs font-semibold text-slate-700">
+                  {t('username')}
                 </label>
-                <div className="relative">
-                  <User size={16} className="absolute left-3.5 top-3.5 text-slate-400" />
+                <div className="relative flex items-center">
+                  <User size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10" />
                   <Input 
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Enter your username"
-                    className="pl-10"
+                    placeholder={t('username')}
+                    className="pl-10 h-11 w-full"
                     required
                   />
                 </div>
               </div>
 
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
-                  Password
+              <div className="flex flex-col gap-1.5">
+                <label className="block text-xs font-semibold text-slate-700">
+                  {t('password')}
                 </label>
-                <div className="relative">
-                  <Lock size={16} className="absolute left-3.5 top-3.5 text-slate-400" />
+                <div className="relative flex items-center">
+                  <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10" />
                   <Input 
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="••••••••"
-                    className="pl-10"
+                    className="pl-10 h-11 w-full"
                     required
                   />
                 </div>
@@ -125,52 +145,52 @@ const LoginPage = () => {
               <Button 
                 type="submit" 
                 variant="primary" 
-                className="w-full mt-2" 
+                className="w-full mt-2 h-11 font-semibold text-sm flex items-center justify-center gap-2" 
                 disabled={loading}
               >
-                {loading ? 'Signing In...' : 'Sign In to Portal'}
+                {loading ? `${t('login')}...` : t('sign_in_portal')}
                 <ArrowRight size={16} />
               </Button>
             </form>
 
             {/* Instant Demo Presets */}
-            <div className="pt-4 border-t border-slate-100">
-              <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">
-                1-Click Quick Demo Login:
+            <div className="pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+              <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider text-center">
+                {t('quick_demo_login')}:
               </p>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-3 gap-2.5">
                 <button
                   type="button"
                   onClick={() => handleQuickPreset('farmer')}
-                  className="flex flex-col items-center p-2.5 rounded-xl border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-100/80 transition-colors text-emerald-900 cursor-pointer text-center"
+                  className="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-100/80 transition-all text-emerald-900 cursor-pointer text-center gap-1 min-h-[56px]"
                 >
-                  <Tractor size={18} className="mb-1 text-emerald-700" />
-                  <span className="text-[11px] font-bold">Farmer</span>
+                  <Tractor size={18} className="text-emerald-700 shrink-0" />
+                  <span className="text-[11px] font-bold leading-none">{t('farmer')}</span>
                 </button>
                 <button
                   type="button"
                   onClick={() => handleQuickPreset('vet')}
-                  className="flex flex-col items-center p-2.5 rounded-xl border border-blue-200 bg-blue-50/60 hover:bg-blue-100/80 transition-colors text-blue-900 cursor-pointer text-center"
+                  className="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-blue-200 bg-blue-50/60 hover:bg-blue-100/80 transition-all text-blue-900 cursor-pointer text-center gap-1 min-h-[56px]"
                 >
-                  <Stethoscope size={18} className="mb-1 text-blue-700" />
-                  <span className="text-[11px] font-bold">Veterinarian</span>
+                  <Stethoscope size={18} className="text-blue-700 shrink-0" />
+                  <span className="text-[11px] font-bold leading-none">{t('veterinarian')}</span>
                 </button>
                 <button
                   type="button"
                   onClick={() => handleQuickPreset('admin')}
-                  className="flex flex-col items-center p-2.5 rounded-xl border border-amber-200 bg-amber-50/60 hover:bg-amber-100/80 transition-colors text-amber-900 cursor-pointer text-center"
+                  className="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-amber-200 bg-amber-50/60 hover:bg-amber-100/80 transition-all text-amber-900 cursor-pointer text-center gap-1 min-h-[56px]"
                 >
-                  <Shield size={18} className="mb-1 text-amber-700" />
-                  <span className="text-[11px] font-bold">Admin</span>
+                  <Shield size={18} className="text-amber-700 shrink-0" />
+                  <span className="text-[11px] font-bold leading-none">{t('admin')}</span>
                 </button>
               </div>
             </div>
 
             <div className="text-center pt-2">
               <p className="text-xs text-slate-500">
-                New to Sentinel?{' '}
+                {t('new_to_sentinel')}{' '}
                 <Link to="/register" className="text-emerald-700 font-bold hover:underline">
-                  Create an account
+                  {t('create_account')}
                 </Link>
               </p>
             </div>
