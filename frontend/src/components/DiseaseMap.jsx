@@ -20,8 +20,8 @@ const DiseaseMap = ({ cases = [], clusters = [], userRole = 'VETERINARIAN', heig
     village: c.village || 'Wadgaon',
     taluka: c.taluka || 'Haveli',
     district: c.district || 'Pune',
-    status: c.status || 'SUSPECTED',
-    is_surveillance_triggered: c.risk_level === 'HIGH' || c.status === 'VERIFIED',
+    status: c.status || 'PENDING_REVIEW',
+    is_surveillance_triggered: c.risk_level === 'HIGH' || c.risk_level === 'CRITICAL' || ['VERIFIED', 'ADJUDICATED'].includes((c.status || '').toUpperCase()),
     location_access_level: c.is_exact_authorized ? 'authorized_exact' : 'approximate_public'
   }));
 

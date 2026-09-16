@@ -95,7 +95,7 @@ const AdminDashboard = () => {
         return score >= 61 || r.risk_level === 'High' || r.risk_level === 'Critical';
       }).length;
 
-      const verifiedCount = casesList.filter(c => c.status === 'VERIFIED').length;
+      const verifiedCount = casesList.filter(c => ['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes((c.status || '').toUpperCase())).length;
 
       setStats({
         totalAnimals: animalsList.length || 128,

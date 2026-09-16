@@ -8,6 +8,45 @@ import { Button } from '../components/ui/button';
 import { Input, Select } from '../components/ui/input';
 import { Badge } from '../components/ui/badge';
 
+const MAHARASHTRA_DISTRICTS = [
+  'Ahmednagar',
+  'Akola',
+  'Amravati',
+  'Aurangabad (Chhatrapati Sambhajinagar)',
+  'Beed',
+  'Bhandara',
+  'Buldhana',
+  'Chandrapur',
+  'Dhule',
+  'Gadchiroli',
+  'Gondia',
+  'Hingoli',
+  'Jalgaon',
+  'Jalna',
+  'Kolhapur',
+  'Latur',
+  'Mumbai City',
+  'Mumbai Suburban',
+  'Nagpur',
+  'Nanded',
+  'Nandurbar',
+  'Nashik',
+  'Osmanabad (Dharashiv)',
+  'Palghar',
+  'Parbhani',
+  'Pune',
+  'Raigad',
+  'Ratnagiri',
+  'Sangli',
+  'Satara',
+  'Sindhudurg',
+  'Solapur',
+  'Thane',
+  'Wardha',
+  'Washim',
+  'Yavatmal'
+];
+
 const RegisterPage = () => {
   const [fullname, setFullname] = useState('');
   const [username, setUsername] = useState('');
@@ -274,12 +313,9 @@ const RegisterPage = () => {
                         value={district}
                         onChange={(e) => setDistrict(e.target.value)}
                       >
-                        <option value="Pune">Pune</option>
-                        <option value="Satara">Satara</option>
-                        <option value="Kolhapur">Kolhapur</option>
-                        <option value="Ahmednagar">Ahmednagar</option>
-                        <option value="Solapur">Solapur</option>
-                        <option value="Nashik">Nashik</option>
+                        {MAHARASHTRA_DISTRICTS.map((d) => (
+                          <option key={d} value={d}>{d}</option>
+                        ))}
                       </Select>
                     </div>
                   </div>
@@ -308,16 +344,15 @@ const RegisterPage = () => {
                   </div>
                   <div>
                     <label className="block text-[11px] font-medium text-slate-600 mb-1">
-                      Assigned District
+                      Assigned District Division
                     </label>
                     <Select
                       value={district}
                       onChange={(e) => setDistrict(e.target.value)}
                     >
-                      <option value="Pune">Pune Division</option>
-                      <option value="Satara">Satara Division</option>
-                      <option value="Kolhapur">Kolhapur Division</option>
-                      <option value="Ahmednagar">Ahmednagar Division</option>
+                      {MAHARASHTRA_DISTRICTS.map((d) => (
+                        <option key={d} value={d}>{d} Division</option>
+                      ))}
                     </Select>
                   </div>
                 </div>
@@ -337,9 +372,10 @@ const RegisterPage = () => {
                       value={district}
                       onChange={(e) => setDistrict(e.target.value)}
                     >
-                      <option value="Pune">Pune District Surveillance Unit</option>
-                      <option value="Satara">Satara District Surveillance Unit</option>
                       <option value="Maharashtra State">Maharashtra State Directorate</option>
+                      {MAHARASHTRA_DISTRICTS.map((d) => (
+                        <option key={d} value={d}>{d} District Surveillance Unit</option>
+                      ))}
                     </Select>
                   </div>
                 </div>

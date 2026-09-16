@@ -49,24 +49,36 @@ const ReviewAssessments = () => {
       try {
         const list = await casesApi.getCases();
         setCasesList(list || []);
-        if (!selectedCaseId && list.length > 0) {
-          setSelectedCaseId(list[0]._id || list[0].case_id);
+        if (case_id) {
+          const target = (list || []).find(c => 
+            c._id === case_id || c.case_id === case_id || c.id === case_id || c.animal_id === case_id
+          );
+          if (target) {
+            setSelectedCaseId(target._id || target.case_id || target.id);
+            setCurrentCase(target);
+            setDiagnosis(target.disease || 'Suspected Condition');
+          }
+        } else if (!selectedCaseId && list && list.length > 0) {
+          setSelectedCaseId(list[0]._id || list[0].case_id || list[0].id);
           setCurrentCase(list[0]);
+          setDiagnosis(list[0].disease || 'Suspected Condition');
         }
       } catch (err) {
         console.error('Failed to load cases list:', err);
       }
     };
     fetchCases();
-  }, []);
+  }, [case_id]);
 
   // Load specific case details
   useEffect(() => {
     if (!selectedCaseId) return;
-    const target = casesList.find(c => (c._id || c.case_id) === selectedCaseId);
+    const target = casesList.find(c => (c._id || c.case_id || c.id) === selectedCaseId);
     if (target) {
       setCurrentCase(target);
-      setDiagnosis(target.disease || 'Foot-and-Mouth Disease (Suspected)');
+      if (target.disease) {
+        setDiagnosis(target.disease);
+      }
     }
   }, [selectedCaseId, casesList]);
 
@@ -230,16 +242,26 @@ const ReviewAssessments = () => {
                   <Camera size={12} className="text-blue-600" />
                   Submitted Lesion Photo
                 </span>
-                <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-center p-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=500&auto=format&fit=crop&q=60"
-                    alt="Clinical Lesion"
-                    className="h-40 w-full object-cover rounded-lg mx-auto"
-                  />
-                  <span className="text-[10px] text-slate-400 block mt-1">
-                    Oral mucosal ulceration • AI Vision Confidence 88.5%
-                  </span>
-                </div>
+                {currentCase?.image_url || currentCase?.image_base64 || currentCase?.image_data ? (
+                  <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-center p-2">
+                    <img
+                      src={currentCase.image_url || currentCase.image_base64 || currentCase.image_data}
+                      alt="Clinical Lesion"
+                      className="max-h-48 w-full object-contain rounded-lg mx-auto bg-black"
+                    />
+                    <span className="text-[10px] text-slate-400 block mt-1">
+                      Submitted Lesion Photo • AI Multi-Modal Screening Evidence
+                    </span>
+                  </div>
+                ) : (
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center space-y-1">
+                    <Camera size={22} className="text-slate-400 mx-auto mb-1" />
+                    <span className="text-xs font-bold text-slate-700 block">No Lesion Photo Attached</span>
+                    <p className="text-[11px] text-slate-500 max-w-xs mx-auto">
+                      Report filed using clinical symptom checklist & vitals for {currentCase?.species || currentCase?.animal_details?.species || 'Livestock'}.
+                    </p>
+                  </div>
+                )}
               </div>
             </CardContent>
           </Card>

@@ -14,11 +14,14 @@ def get_cases(
     current_user: dict = Depends(get_current_user)
 ):
     query = {}
-    if status_filter:
+    if status_filter and status_filter.upper() != "ALL":
         query["status"] = status_filter.upper()
-    if disease_filter:
+    if disease_filter and disease_filter.upper() != "ALL":
         query["disease"] = disease_filter
-    if district_filter:
+        
+    # District jurisdiction filter:
+    # 1. If caller specifies explicit district_filter (e.g. "Pune" or "ALL")
+    if district_filter and district_filter.upper() != "ALL":
         query["district"] = district_filter
         
     cases = db["disease_cases"].find(query)

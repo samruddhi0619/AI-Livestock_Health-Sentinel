@@ -236,15 +236,21 @@ class HealthReportingService:
         final_risk_score = multi_modal_eval["final_risk_score"]
         risk_level = multi_modal_eval["risk_level"]
         top_condition = "Suspected Disease"
-        if symptom_result and symptom_result.get("top_condition"):
-            top_condition = symptom_result["top_condition"]
-        elif image_result and image_result.get("predicted_class"):
-            top_condition = image_result["predicted_class"]
+        img_class = image_result.get("predicted_class") if image_result else None
+        sym_class = symptom_result.get("top_condition") if symptom_result else None
+
+        if img_class and img_class != "Healthy":
+            top_condition = img_class
+        elif sym_class:
+            top_condition = sym_class
+        elif img_class:
+            top_condition = img_class
 
         # 7. Determine Automated Disease Surveillance Escalation
-        # High-risk (61-80), Critical (81-100), or Severe Symptoms (>=75) automatically triggers surveillance case
+        # High-risk (61-80), Critical (81-100), or Severe Symptoms/Vision Risk (>=60) automatically triggers surveillance case
         s_score = symptom_score if symptom_score is not None else 0.0
-        is_high_risk = risk_level in ["High", "Critical"] or final_risk_score >= 60.0 or s_score >= 75.0
+        i_score = image_score if image_score is not None else 0.0
+        is_high_risk = risk_level in ["High", "Critical"] or final_risk_score >= 60.0 or s_score >= 75.0 or i_score >= 60.0
         surveillance_case_id = None
         
         report_id = str(uuid.uuid4())
@@ -258,10 +264,15 @@ class HealthReportingService:
                 "id": surveillance_case_id,
                 "animal_id": animal["_id"],
                 "animal_tag": animal.get("animal_id", animal_id),
+                "species": animal.get("species", "Cattle"),
+                "breed": animal.get("breed", "Unknown"),
                 "health_report_id": report_id,
                 "reported_disease": top_condition,
                 "disease": top_condition,
                 "reporting_source": "FARMER_SELF_REPORT",
+                "farmer_name": animal.get("owner_name") or username,
+                "owner_id": animal.get("owner_id", username),
+                "owner_name": animal.get("owner_name", username),
                 "exact_latitude": loc_info["exact_latitude"],
                 "exact_longitude": loc_info["exact_longitude"],
                 "approximate_latitude": loc_info["approximate_latitude"],
@@ -273,6 +284,15 @@ class HealthReportingService:
                 "district": loc_info["district"],
                 "status": "PENDING_REVIEW",
                 "is_quarantine_required": True,
+                "symptoms": symptoms,
+                "image_url": saved_image_url,
+                "image_base64": saved_image_url or image_base64,
+                "image_data": saved_image_url or image_base64,
+                "ai_analyses": {
+                    "image": image_result,
+                    "symptoms": symptom_result,
+                    "environment": env_result
+                },
                 "risk_score": final_risk_score,
                 "risk_level": risk_level,
                 "reported_at": now_iso,

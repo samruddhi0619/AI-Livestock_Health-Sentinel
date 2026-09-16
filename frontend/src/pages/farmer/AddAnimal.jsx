@@ -318,11 +318,12 @@ const AddAnimal = () => {
                 </label>
                 <Input
                   type="number"
-                  step="0.5"
+                  step="0.1"
                   min="0.1"
-                  max="25"
+                  max="30"
                   value={age}
                   onChange={(e) => setAge(e.target.value)}
+                  placeholder="e.g. 2.5, 3.0, 4.2"
                   required
                 />
               </div>

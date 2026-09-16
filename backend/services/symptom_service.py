@@ -17,6 +17,54 @@ from preprocess import SYMPTOMS_LIST, BREEDS_MAP, GENDER_MAP, HISTORY_MAP, VACCI
 
 MODEL_CHECKPOINT_PATH = os.path.join(ROOT_DIR, "ml", "models", "symptom_model.pkl")
 
+SYMPTOM_ALIAS_MAP = {
+    "high fever / heat": "fever",
+    "fever": "fever",
+    "heat": "fever",
+    "high_fever": "fever",
+    "mouth / tongue blisters": "skin_abnormalities",
+    "mouth_blisters": "skin_abnormalities",
+    "blisters": "skin_abnormalities",
+    "excessive salivation / drooling": "swelling",
+    "salivation": "swelling",
+    "drooling": "swelling",
+    "lameness / hoof lesions": "swelling",
+    "lameness": "swelling",
+    "hoof_lesions": "swelling",
+    "skin lumps / nodules": "skin_abnormalities",
+    "skin_nodules": "skin_abnormalities",
+    "lumps": "skin_abnormalities",
+    "nodules": "skin_abnormalities",
+    "appetite loss / off feed": "loss_of_appetite",
+    "loss_of_appetite": "loss_of_appetite",
+    "off_feed": "loss_of_appetite",
+    "sudden milk drop": "reduced_milk_production",
+    "milk_drop": "reduced_milk_production",
+    "reduced_milk_production": "reduced_milk_production",
+    "nasal / eye discharge": "nasal_discharge",
+    "nasal_discharge": "nasal_discharge",
+    "eye_discharge": "nasal_discharge",
+    "rapid / labored breathing": "breathing_difficulty",
+    "breathing_difficulty": "breathing_difficulty",
+    "labored_breathing": "breathing_difficulty",
+    "lethargy / dullness": "reduced_activity",
+    "weakness": "reduced_activity",
+    "lethargy": "reduced_activity",
+    "dullness": "reduced_activity",
+    "cough": "cough",
+    "diarrhea": "diarrhea",
+    "swelling": "swelling"
+}
+
+def normalize_symptom(s: str) -> str:
+    cleaned = str(s).strip().lower()
+    if cleaned in SYMPTOM_ALIAS_MAP:
+        return SYMPTOM_ALIAS_MAP[cleaned]
+    for alias, target in SYMPTOM_ALIAS_MAP.items():
+        if alias in cleaned or cleaned in alias:
+            return target
+    return cleaned.replace(" ", "_")
+
 class SymptomRiskService:
     """
     Dedicated Tabular Machine Learning Service for multi-disease risk assessment.
@@ -86,8 +134,11 @@ class SymptomRiskService:
             if self._model is None:
                 raise RuntimeError("Symptom model checkpoint is not available. Please verify model training.")
                 
+        # Normalize symptoms via alias map
+        normalized_input_symptoms = [normalize_symptom(s) for s in symptoms if str(s).strip()]
+
         # 1. Encode demographic & symptom vector
-        X_vec = encode_input(symptoms, age, breed, gender, history, vaccination)
+        X_vec = encode_input(normalized_input_symptoms, age, breed, gender, history, vaccination)
         
         # 2. Multi-class prediction (Reuses cached model in memory)
         probs = self._model.predict_proba(X_vec)[0]

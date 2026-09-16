@@ -62,22 +62,24 @@ const AssessmentResult = () => {
   }
 
   // Fallback / standard assessment representation
-  const finalRisk = assessment?.final_risk_score ?? assessment?.risk_score ?? 68;
-  const riskLevel = assessment?.risk_level || (finalRisk >= 81 ? 'CRITICAL' : finalRisk >= 61 ? 'HIGH' : finalRisk >= 31 ? 'MEDIUM' : 'LOW');
+  const finalRisk = assessment?.final_risk_score ?? assessment?.risk_score ?? assessment?.multi_modal_risk?.final_risk_score ?? 68;
+  const riskLevel = assessment?.risk_level || assessment?.multi_modal_risk?.risk_level || (finalRisk >= 81 ? 'CRITICAL' : finalRisk >= 61 ? 'HIGH' : finalRisk >= 31 ? 'MEDIUM' : 'LOW');
   
-  const animalId = assessment?.animal_id || 'MH-PUN-CTL-0124';
-  const individualScores = assessment?.individual_model_scores || {
-    image_risk: assessment?.image_risk_score ?? 75,
-    symptom_risk: assessment?.symptom_risk_score ?? 70,
-    environmental_risk: assessment?.environmental_risk_score ?? 55,
-    health_vaccination_risk: assessment?.vaccination_risk_score ?? 60
+  const animalId = assessment?.animal_id || assessment?.animal_tag || 'MH-PUN-CTL-0124';
+  
+  const rawIndividual = assessment?.individual_model_scores || assessment?.multi_modal_risk?.individual_model_scores || {};
+  const individualScores = {
+    image_risk: rawIndividual.image_risk ?? assessment?.image_risk_score ?? assessment?.ai_analyses?.image?.risk_score ?? null,
+    symptom_risk: rawIndividual.symptom_risk ?? assessment?.symptom_risk_score ?? assessment?.ai_analyses?.symptoms?.risk_score ?? null,
+    environmental_risk: rawIndividual.environmental_risk ?? assessment?.environmental_risk_score ?? assessment?.ai_analyses?.environment?.environmental_risk_score ?? null,
+    context_risk: rawIndividual.context_risk ?? rawIndividual.health_vaccination_risk ?? assessment?.vaccination_risk_score ?? assessment?.context_score ?? null
   };
 
-  const contributingFactors = assessment?.contributing_factors || [
-    'Elevated body temperature (39.5°C) and acute mouth vesicles',
-    'High image vision match for erosive oral lesions (40% weight)',
-    'Neighboring district reports 3 suspected vesicular cases',
-    'Vaccination booster due within 30 days'
+  const contributingFactors = assessment?.contributing_factors || assessment?.multi_modal_risk?.contributing_factors?.map(f => f.description) || [
+    'Elevated body temperature and acute symptom presentation',
+    'AI multi-disease symptom screening evaluation',
+    'Regional vector transmission hazard suitability',
+    'Host immunization and historical clinical record'
   ];
 
   const getRiskColorTheme = (lvl) => {
@@ -239,7 +241,7 @@ const AssessmentResult = () => {
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
-                  {individualScores.image_risk ?? 75}
+                  {individualScores.image_risk !== null && individualScores.image_risk !== undefined ? individualScores.image_risk : 'N/A'}
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
@@ -256,7 +258,7 @@ const AssessmentResult = () => {
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
-                  {individualScores.symptom_risk ?? 70}
+                  {individualScores.symptom_risk !== null && individualScores.symptom_risk !== undefined ? individualScores.symptom_risk : 'N/A'}
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
@@ -273,7 +275,7 @@ const AssessmentResult = () => {
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
-                  {individualScores.environmental_risk ?? 55}
+                  {individualScores.environmental_risk !== null && individualScores.environmental_risk !== undefined ? individualScores.environmental_risk : 'N/A'}
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
@@ -290,7 +292,7 @@ const AssessmentResult = () => {
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-black text-slate-900">
-                  {individualScores.health_vaccination_risk ?? 60}
+                  {individualScores.context_risk !== null && individualScores.context_risk !== undefined ? individualScores.context_risk : 'N/A'}
                 </span>
                 <span className="text-xs text-slate-400">/100</span>
               </div>
@@ -303,7 +305,7 @@ const AssessmentResult = () => {
               {t('doc_weight_calc')}:
             </span>
             <p className="font-mono text-xs text-emerald-950 bg-white p-2 rounded-lg border border-slate-200">
-              Final Risk ({finalRisk}) = (0.40 × {individualScores.image_risk}) + (0.35 × {individualScores.symptom_risk}) + (0.15 × {individualScores.environmental_risk}) + (0.10 × {individualScores.health_vaccination_risk})
+              Final Risk ({finalRisk}) = (0.40 × {individualScores.image_risk ?? 'N/A'}) + (0.35 × {individualScores.symptom_risk ?? 'N/A'}) + (0.15 × {individualScores.environmental_risk ?? 'N/A'}) + (0.10 × {individualScores.context_risk ?? 'N/A'})
             </p>
           </div>
         </CardContent>

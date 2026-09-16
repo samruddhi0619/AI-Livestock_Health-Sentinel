@@ -31,6 +31,10 @@ const HighRiskCases = () => {
   const [severityFilter, setSeverityFilter] = useState('ALL');
   const [statusFilter, setStatusFilter] = useState('ALL');
 
+  const [districtFilter, setDistrictFilter] = useState('ALL');
+
+  const userDistrict = user?.district || 'Pune';
+
   const fetchCases = async () => {
     if (!token) return;
     try {
@@ -64,24 +68,44 @@ const HighRiskCases = () => {
       (c.animal_id && c.animal_id.toLowerCase().includes(s)) ||
       (c.disease && c.disease.toLowerCase().includes(s)) ||
       (c.village && c.village.toLowerCase().includes(s)) ||
-      (c.farmer_name && c.farmer_name.toLowerCase().includes(s));
+      (c.farmer_name && c.farmer_name.toLowerCase().includes(s)) ||
+      (c.district && c.district.toLowerCase().includes(s));
 
     const matchesSeverity =
       severityFilter === 'ALL' ||
       (severityFilter === 'CRITICAL' && (c.risk_level === 'CRITICAL' || (c.risk_score && c.risk_score >= 81))) ||
       (severityFilter === 'HIGH' && (c.risk_level === 'HIGH' || (c.risk_score && c.risk_score >= 61 && c.risk_score < 81)));
 
+    const caseStatus = (c.status || 'PENDING_REVIEW').toUpperCase();
     const matchesStatus =
-      statusFilter === 'ALL' || c.status === statusFilter;
+      statusFilter === 'ALL' ||
+      (statusFilter === 'SUSPECTED' || statusFilter === 'PENDING' || statusFilter === 'PENDING_REVIEW'
+        ? ['SUSPECTED', 'PENDING', 'PENDING_REVIEW'].includes(caseStatus)
+        : statusFilter === 'VERIFIED' || statusFilter === 'ADJUDICATED'
+        ? ['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes(caseStatus)
+        : caseStatus === statusFilter.toUpperCase());
 
-    return matchesSearch && matchesSeverity && matchesStatus;
+    const matchesDistrict =
+      districtFilter === 'ALL' ||
+      !c.district ||
+      (districtFilter === 'MY_DISTRICT' && (
+        c.district.toLowerCase().includes(userDistrict.toLowerCase()) || 
+        userDistrict.toLowerCase().includes(c.district.toLowerCase())
+      )) ||
+      (c.district && c.district.toLowerCase().includes(districtFilter.toLowerCase()));
+
+    return matchesSearch && matchesSeverity && matchesStatus && matchesDistrict;
   });
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 font-['Outfit',sans-serif]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold mb-2 border border-blue-200">
+            <MapPin size={13} className="text-blue-600" />
+            <span>Assigned Jurisdiction: <strong>{userDistrict} Division</strong></span>
+          </div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
             <span>High-Risk Livestock Triage Queue</span>
             <Badge variant="high" className="text-xs">
@@ -89,7 +113,7 @@ const HighRiskCases = () => {
             </Badge>
           </h1>
           <p className="text-xs text-slate-500 mt-0.5">
-            Suspected infectious disease reports prioritized by multi-modal AI risk score
+            Health reports automatically routed from local farmers for clinical review and verification
           </p>
         </div>
 
@@ -112,14 +136,37 @@ const HighRiskCases = () => {
           <div className="relative">
             <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
             <Input
-              placeholder="Search by Animal Tag, Suspected Disease, Farmer Name, or Village..."
+              placeholder="Search by Animal Tag, Suspected Disease, Farmer Name, Village, or District..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="pl-10 text-xs"
             />
           </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
+          <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+            {/* District Jurisdiction Filter */}
+            <div className="flex items-center gap-1.5 text-xs">
+              <span className="text-slate-500 font-semibold mr-1 flex items-center gap-1">
+                <MapPin size={13} className="text-blue-600" /> District:
+              </span>
+              <button
+                onClick={() => setDistrictFilter('MY_DISTRICT')}
+                className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
+                  districtFilter === 'MY_DISTRICT' ? 'bg-blue-700 text-white font-bold' : 'bg-blue-50 text-blue-800 hover:bg-blue-100'
+                }`}
+              >
+                My District ({userDistrict})
+              </button>
+              <button
+                onClick={() => setDistrictFilter('ALL')}
+                className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
+                  districtFilter === 'ALL' ? 'bg-slate-800 text-white font-bold' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                All Regional Districts
+              </button>
+            </div>
+
             {/* Urgency filters */}
             <div className="flex items-center gap-1.5 text-xs">
               <span className="text-slate-500 font-semibold mr-1 flex items-center gap-1">
@@ -157,7 +204,7 @@ const HighRiskCases = () => {
               <button
                 onClick={() => setStatusFilter('ALL')}
                 className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
-                  statusFilter === 'ALL' ? 'bg-emerald-800 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  statusFilter === 'ALL' ? 'bg-emerald-800 text-white font-bold' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
                 All
@@ -165,7 +212,7 @@ const HighRiskCases = () => {
               <button
                 onClick={() => setStatusFilter('SUSPECTED')}
                 className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
-                  statusFilter === 'SUSPECTED' ? 'bg-amber-600 text-white' : 'bg-amber-50 text-amber-700 hover:bg-amber-100'
+                  ['SUSPECTED', 'PENDING', 'PENDING_REVIEW'].includes(statusFilter) ? 'bg-amber-600 text-white font-bold' : 'bg-amber-50 text-amber-700 hover:bg-amber-100'
                 }`}
               >
                 Pending Review
@@ -173,7 +220,7 @@ const HighRiskCases = () => {
               <button
                 onClick={() => setStatusFilter('VERIFIED')}
                 className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
-                  statusFilter === 'VERIFIED' ? 'bg-green-700 text-white' : 'bg-green-50 text-green-700 hover:bg-green-100'
+                  ['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes(statusFilter) ? 'bg-green-700 text-white font-bold' : 'bg-green-50 text-green-700 hover:bg-green-100'
                 }`}
               >
                 Adjudicated
@@ -244,8 +291,8 @@ const HighRiskCases = () => {
                       </div>
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="text-slate-500">Status:</span>
-                        <Badge variant={c.status === 'VERIFIED' ? 'success' : 'warning'} className="text-[10px] py-0">
-                          {c.status || 'SUSPECTED'}
+                        <Badge variant={['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes((c.status || '').toUpperCase()) ? 'success' : 'warning'} className="text-[10px] py-0">
+                          {c.status || 'PENDING_REVIEW'}
                         </Badge>
                       </div>
                     </div>

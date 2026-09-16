@@ -13,18 +13,24 @@ L.Icon.Default.mergeOptions({
 });
 
 // Component to dynamically adjust map bounds when filtered data changes
-function MapRecenter({ reports, clusters, hotspots, defaultCenter }) {
+function MapRecenter({ reports = [], clusters = [], hotspots = [], defaultCenter }) {
   const map = useMap();
   useEffect(() => {
     const latLngs = [];
-    reports.forEach(r => {
-      if (r.latitude && r.longitude) latLngs.push([r.latitude, r.longitude]);
+    (reports || []).forEach(r => {
+      const lat = Number(r?.latitude);
+      const lng = Number(r?.longitude);
+      if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) latLngs.push([lat, lng]);
     });
-    clusters.forEach(c => {
-      if (c.center_latitude && c.center_longitude) latLngs.push([c.center_latitude, c.center_longitude]);
+    (clusters || []).forEach(c => {
+      const lat = Number(c?.center_latitude || c?.latitude);
+      const lng = Number(c?.center_longitude || c?.longitude);
+      if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) latLngs.push([lat, lng]);
     });
-    hotspots.forEach(h => {
-      if (h.latitude && h.longitude) latLngs.push([h.latitude, h.longitude]);
+    (hotspots || []).forEach(h => {
+      const lat = Number(h?.latitude);
+      const lng = Number(h?.longitude);
+      if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) latLngs.push([lat, lng]);
     });
 
     if (latLngs.length > 0) {
@@ -32,8 +38,8 @@ function MapRecenter({ reports, clusters, hotspots, defaultCenter }) {
       if (bounds.isValid()) {
         map.fitBounds(bounds.pad(0.2));
       }
-    } else if (defaultCenter) {
-      map.setView([defaultCenter.latitude, defaultCenter.longitude], defaultCenter.zoom || 12);
+    } else if (defaultCenter && defaultCenter.latitude && defaultCenter.longitude) {
+      map.setView([Number(defaultCenter.latitude), Number(defaultCenter.longitude)], defaultCenter.zoom || 12);
     }
   }, [reports, clusters, hotspots, defaultCenter, map]);
 
@@ -121,6 +127,59 @@ const SurveillanceMap = ({
       default: return '#3b82f6';
     }
   };
+
+  // Sanitized and validated data layers for Leaflet rendering
+  const validClusters = useMemo(() => {
+    return (mapData.clusters || []).map((c, idx) => {
+      const lat = Number(c?.center_latitude ?? c?.latitude ?? c?.center_lat ?? c?.center_location?.latitude);
+      const lng = Number(c?.center_longitude ?? c?.longitude ?? c?.center_lng ?? c?.center_location?.longitude);
+      const radiusKm = Number(c?.radius_km ?? c?.radius ?? 1.25);
+      if (isNaN(lat) || isNaN(lng) || lat === 0 || lng === 0) return null;
+      return {
+        ...c,
+        center_latitude: lat,
+        center_longitude: lng,
+        radius_km: isNaN(radiusKm) || radiusKm <= 0 ? 1.25 : radiusKm
+      };
+    }).filter(Boolean);
+  }, [mapData.clusters]);
+
+  const validHotspots = useMemo(() => {
+    return (mapData.hotspots || []).map((h, idx) => {
+      const lat = Number(h?.latitude ?? h?.center_latitude ?? h?.location?.latitude);
+      const lng = Number(h?.longitude ?? h?.center_longitude ?? h?.location?.longitude);
+      const radiusM = Number(h?.radius_meters ?? h?.radius ?? 2500);
+      if (isNaN(lat) || isNaN(lng) || lat === 0 || lng === 0) return null;
+      return {
+        ...h,
+        latitude: lat,
+        longitude: lng,
+        radius_meters: isNaN(radiusM) || radiusM <= 0 ? 2500 : radiusM
+      };
+    }).filter(Boolean);
+  }, [mapData.hotspots]);
+
+  const validReports = useMemo(() => {
+    return (mapData.reports || []).map((r, idx) => {
+      const lat = Number(r?.latitude ?? r?.approximate_latitude ?? r?.location?.latitude);
+      const lng = Number(r?.longitude ?? r?.approximate_longitude ?? r?.location?.longitude);
+      if (isNaN(lat) || isNaN(lng) || lat === 0 || lng === 0) return null;
+      return {
+        ...r,
+        latitude: lat,
+        longitude: lng
+      };
+    }).filter(Boolean);
+  }, [mapData.reports]);
+
+  const mapCenterCoords = useMemo(() => {
+    const lat = Number(mapData.map_center?.latitude);
+    const lng = Number(mapData.map_center?.longitude);
+    return [
+      !isNaN(lat) && lat !== 0 ? lat : 18.5204,
+      !isNaN(lng) && lng !== 0 ? lng : 73.8567
+    ];
+  }, [mapData.map_center]);
 
   const isFarmerView = mapData.is_farmer_view ?? (userRole === 'FARMER');
 
@@ -362,8 +421,8 @@ const SurveillanceMap = ({
       {/* 4. The Leaflet Map Container */}
       <div style={{ position: 'relative', height: height, width: '100%' }}>
         <MapContainer
-          center={[mapData.map_center.latitude, mapData.map_center.longitude]}
-          zoom={mapData.map_center.zoom}
+          center={mapCenterCoords}
+          zoom={mapData.map_center?.zoom || 12}
           style={{ height: '100%', width: '100%' }}
           scrollWheelZoom={true}
         >
@@ -374,16 +433,16 @@ const SurveillanceMap = ({
           />
 
           <MapRecenter
-            reports={mapData.reports || []}
-            clusters={mapData.clusters || []}
-            hotspots={mapData.hotspots || []}
+            reports={validReports}
+            clusters={validClusters}
+            hotspots={validHotspots}
             defaultCenter={mapData.map_center}
           />
 
           {/* Layer A: Disease Outbreak Clusters (DBSCAN) */}
-          {mapData.clusters?.map((cluster, idx) => (
+          {validClusters.map((cluster, idx) => (
             <Circle
-              key={`cluster-${idx}`}
+              key={`cluster-${cluster.cluster_code || idx}`}
               center={[cluster.center_latitude, cluster.center_longitude]}
               radius={cluster.radius_km * 1000}
               pathOptions={{
@@ -432,11 +491,11 @@ const SurveillanceMap = ({
           ))}
 
           {/* Layer B: Potential Hotspots (Bioclimatic + Density) */}
-          {mapData.hotspots?.map((hotspot, idx) => (
+          {validHotspots.map((hotspot, idx) => (
             <Circle
-              key={`hotspot-${idx}`}
+              key={`hotspot-${hotspot.hotspot_id || idx}`}
               center={[hotspot.latitude, hotspot.longitude]}
-              radius={hotspot.radius_meters || 2500}
+              radius={hotspot.radius_meters}
               pathOptions={{
                 color: '#f97316',
                 fillColor: '#fb923c',
@@ -460,13 +519,13 @@ const SurveillanceMap = ({
           ))}
 
           {/* Layer C: Individual Reports (Where Authorized) */}
-          {mapData.reports?.map((report, idx) => {
+          {validReports.map((report, idx) => {
             const riskColor = getRiskColor(report.risk_level);
             const isAuthorizedExact = report.location_access_level === 'authorized_exact';
             
             return (
               <CircleMarker
-                key={`report-${idx}`}
+                key={`report-${report.report_id || idx}`}
                 center={[report.latitude, report.longitude]}
                 radius={isAuthorizedExact ? 8 : 7}
                 pathOptions={{

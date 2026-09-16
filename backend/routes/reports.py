@@ -109,13 +109,30 @@ async def submit_health_report_endpoint(
             
         symptoms = body.get("symptoms", [])
         image_url = body.get("image_url")
-        image_base64 = body.get("image_base64")
+        image_base64 = body.get("image_base64") or body.get("image_data")
         location_payload = body.get("location")
-        body_temperature_c = float(body.get("body_temperature_c", 38.5))
-        appetite_score = float(body.get("appetite_score", 1.0))
-        milk_yield_liters = float(body.get("milk_yield_liters", 0.0))
+        
+        raw_temp = body.get("body_temperature_c") if body.get("body_temperature_c") is not None else body.get("temperature")
+        body_temperature_c = float(raw_temp) if raw_temp is not None else 38.5
+        
+        raw_appetite = body.get("appetite_score") if body.get("appetite_score") is not None else body.get("appetite_level")
+        if raw_appetite is not None:
+            if str(raw_appetite).lower() in ["none", "anorexia", "0", "0.0"]:
+                appetite_score = 0.0
+            elif str(raw_appetite).lower() in ["reduced", "picky", "0.5"]:
+                appetite_score = 0.5
+            else:
+                try:
+                    appetite_score = float(raw_appetite)
+                except ValueError:
+                    appetite_score = 1.0
+        else:
+            appetite_score = 1.0
+
+        raw_milk = body.get("milk_yield_liters") if body.get("milk_yield_liters") is not None else body.get("milk_yield_drop")
+        milk_yield_liters = float(raw_milk) if raw_milk is not None else 0.0
         activity_score = float(body.get("activity_score", 1.0))
-        clinical_notes = body.get("clinical_notes")
+        clinical_notes = body.get("clinical_notes") or body.get("observations")
 
     if not symptoms:
         raise HTTPException(status_code=400, detail="At least one observed symptom is required in 'symptoms'.")

@@ -68,7 +68,7 @@ const VetDashboard = () => {
   };
 
   // Live Metrics
-  const casesAwaitingReview = cases.filter(c => c.status === 'SUSPECTED' || c.status === 'PENDING').length;
+  const casesAwaitingReview = cases.filter(c => ['SUSPECTED', 'PENDING', 'PENDING_REVIEW'].includes((c.status || 'PENDING_REVIEW').toUpperCase())).length;
   const highRiskCasesCount = cases.filter(c => c.risk_level === 'CRITICAL' || c.risk_level === 'HIGH' || (c.risk_score && c.risk_score >= 61)).length;
   const activeClustersCount = clusters.length;
 
@@ -99,7 +99,7 @@ const VetDashboard = () => {
     { week: 'Week 1', Suspected: 4, Adjudicated: 3 },
     { week: 'Week 2', Suspected: 7, Adjudicated: 6 },
     { week: 'Week 3', Suspected: 5, Adjudicated: 5 },
-    { week: 'Week 4', Suspected: casesAwaitingReview || 3, Adjudicated: cases.filter(c => c.status === 'VERIFIED').length || 8 }
+    { week: 'Week 4', Suspected: casesAwaitingReview || 3, Adjudicated: cases.filter(c => ['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes((c.status || '').toUpperCase())).length || 8 }
   ];
 
   return (
@@ -156,7 +156,7 @@ const VetDashboard = () => {
                 {highRiskCasesCount}
               </p>
               <span className="text-[11px] font-medium text-red-600 mt-1 block">
-                Score $\ge 61.0$ (High/Critical)
+                Score ≥ 61.0 (High/Critical)
               </span>
             </div>
             <div className="w-12 h-12 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center">
@@ -216,7 +216,7 @@ const VetDashboard = () => {
                 <Badge variant="success" className="text-[9px] py-0 px-1">REAL DATA</Badge>
               </div>
               <p className="text-3xl font-black text-slate-900 mt-0.5">
-                {cases.filter(c => c.status === 'VERIFIED' || c.status === 'RULED_OUT').length}
+                {cases.filter(c => ['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes((c.status || '').toUpperCase())).length}
               </p>
               <span className="text-[11px] font-medium text-emerald-600 mt-1 block">
                 Official clinical records
@@ -427,8 +427,8 @@ const VetDashboard = () => {
                           <RiskBadge level={c.risk_level || 'HIGH'} score={score} />
                         </td>
                         <td className="py-3.5 px-4">
-                          <Badge variant={c.status === 'VERIFIED' ? 'success' : 'warning'}>
-                            {c.status || 'SUSPECTED'}
+                          <Badge variant={['VERIFIED', 'ADJUDICATED', 'RULED_OUT'].includes((c.status || '').toUpperCase()) ? 'success' : 'warning'}>
+                            {c.status || 'PENDING_REVIEW'}
                           </Badge>
                         </td>
                         <td className="py-3.5 px-4 text-right">
